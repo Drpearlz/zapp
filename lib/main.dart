@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zapp/screens/splash.dart';
 
 void main() {
   runApp(const MyApp());
@@ -7,16 +8,11 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
+  // This widget is the root of our application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-       
-        primarySwatch: Colors.blue,
-        
-      ),
+    return const MaterialApp(
+      home: SplashScreen(),
     );
   }
 }
