@@ -16,6 +16,10 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 ## Team
-Peggy Roxy - Mobile Dev/UX Designer
+[Peggy Roxy - Mobile Dev / UX Designer](https://github.com/Drpearlz)
 
 [Jeffrey Whewhetu - Software Developer](https://github.com/c0d33ngr)
+
+[Clement Peter - Flutter Developer](https://github.com/ClementPeter)
+
+
