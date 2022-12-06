@@ -1,6 +1,6 @@
 # zapp
 
-A new Flutter project by some flutter developers of Ingressive for good x Zuri.
+A starter template for new Flutter projects by some flutter developers of Ingressive for good x Zuri.
 
 ## Getting Started
 
