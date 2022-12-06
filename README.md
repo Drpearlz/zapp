@@ -17,3 +17,4 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Team
 Peggy Roxy - Mobile Dev/UX Designer
+[Jeffrey Whewhetu - Software Developer](https://github.com/c0d33ngr)
