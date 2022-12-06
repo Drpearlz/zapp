@@ -16,4 +16,5 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 ## Team
-Peggy Roxy - Mobile Dev/UX Designer
+* Peggy Roxy - Mobile Dev/UX Designer
+* Rapp Jeremiah - Mobile Dev
