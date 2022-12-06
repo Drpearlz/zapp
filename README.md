@@ -14,5 +14,17 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+<<<<<<< HEAD
 ##Names
 Hammed Ibraheem Omowumi 
+=======
+
+## Team
+[Peggy Roxy - Mobile Dev / UX Designer](https://github.com/Drpearlz)
+
+[Jeffrey Whewhetu - Software Developer](https://github.com/c0d33ngr)
+
+[Clement Peter - Flutter Developer](https://github.com/ClementPeter)
+
+
+>>>>>>> 6d7dfb93692e95258477ef458d59735eb07cf367
