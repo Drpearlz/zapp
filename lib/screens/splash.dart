@@ -1,40 +1,40 @@
 import 'package:flutter/material.dart';
+import 'package:zapp/constant/constant.dart';
 import 'package:zapp/screens/onboarding.dart';
+
+import '../widgets/colors.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-
-    Future.delayed(const Duration(seconds: 2), () {
+//simulate delay before moving on to next page
+    Future.delayed(const Duration(seconds: 4), () {
       Navigator.of(context).push(
-        MaterialPageRoute(builder: (context) => const OnboardingPage())
-      );
+          MaterialPageRoute(builder: (context) => const OnboardingPage()));
     });
 
-    return Stack(
-      children: [
-        Container(
-          color: Colors.white,
-        ),
-        const Align(
-          alignment: Alignment.center,
-          child: Icon(Icons.code_rounded, color: Colors.black, size: 80),
-          //we could try to add image of our logo instead of icon
-        ),
-        Align(
-          alignment: Alignment.center,
-          child: SizedBox(
-            width: 160,
-            height: 160,
-            child: CircularProgressIndicator(
-              valueColor: AlwaysStoppedAnimation<Color>(Colors.black.withOpacity(0.2)),
-              strokeWidth: 10,
+    return Container(
+      color: Colors.white,
+      child: Stack(
+        children: [
+          Align(
+            alignment: Alignment.center,
+            child: Image.asset('assets/logo/logogroup.png')
+          ),
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Container(
+                margin: const EdgeInsets.only(bottom: 50),
+              child: const CircularProgressIndicator(
+                valueColor: AlwaysStoppedAnimation<Color>(
+                    mainPurple)
+              ),
             ),
           )
-        )
-      ],
+        ],
+      ),
     );
   }
 }
