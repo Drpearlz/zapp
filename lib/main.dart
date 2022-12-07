@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zapp/screens/login/login_screen.dart';
 import 'package:zapp/screens/splash.dart';
 
 void main() {
@@ -12,7 +13,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: SplashScreen(),
+      home: Scaffold(
+        body: SplashScreen(),
+      ),
     );
   }
 }
