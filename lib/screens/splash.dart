@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:zapp/constant.dart';
-import 'package:zapp/screens/onboarding.dart';
+import 'package:zapp/screens/intro/onboarding.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-//simulate delay before moving on to next page
+    //simulate delay before moving on to the Onboarding Screen
     Future.delayed(const Duration(seconds: 2), () {
       Navigator.of(context).push(
         MaterialPageRoute(
