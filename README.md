@@ -31,3 +31,5 @@ samples, guidance on mobile development, and a full API reference.
 [Moses Mwila - Software Developer](https://github.com/mosesmwila)
 
 [tony Sama - flutter developer](https://github.com/metatony)
+
+[Nana Nyaniba Quartey - Mobile Developer](https://github.com/nyanibaquartey)
