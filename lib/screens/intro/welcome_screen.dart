@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zapp/screens/sign_up/sign_up.dart';
 import '../../constant.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -6,103 +7,96 @@ class WelcomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: [
-          const Spacer(),
-          SizedBox(
-            child: Image.asset("assets/images/logo2.png"),
-          ),
-          const Text("Welcome to Jejelove Health !"),
-          SizedBox(
-            width: double.infinity,
-            height: 50,
-            child: Container(
-              // style: ElevatedButton.styleFrom(
-              //   shape: RoundedRectangleBorder(
-              //     borderRadius: BorderRadius.circular(20),
-              //   ),
-              //   backgroundColor: kPrimaryColor,
-              // ),
-              // onPressed: press as void Function()?,
-              // onPressed: () {},
-              child: const Text(
-                "Create Account",
-                // style: TextStyle(
-                //   fontSize: getProportionateScreenHeight(18),
-                // ),
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            const Spacer(flex: 2),
+            SizedBox(
+              child: Image.asset("assets/images/logo2.png"),
+            ),
+            const Spacer(),
+            const Text(
+              "Welcome to Jejelove Health !",
+              style: TextStyle(
+                color: kPrimaryColor,
+                fontFamily: 'Righteous',
+                fontWeight: FontWeight.bold,
+                fontSize: 22.0,
+                // letterSpacing: 2.0,
               ),
             ),
-          ),
-          const SizedBox(height: 15),
-          SizedBox(
-            width: double.infinity,
-            height: 50,
-            // child: ElevatedButton(
-            //   style: ElevatedButton.styleFrom(
-            //     shape: RoundedRectangleBorder(
-            //       borderRadius: BorderRadius.circular(20),
-            //     ),
-            //     backgroundColor: kPrimaryColor,
-            //   ),
-            //   // onPressed: press as void Function()?,
-            //   onPressed: () {},
-            //   child: const Text(
-            //     "Sign In",
-            //     // style: TextStyle(
-            //     //   fontSize: getProportionateScreenHeight(18),
-            //     // ),
-            //   ),
-            // ),
-            child: GestureDetector(
-              child: Container(
-                // height: 50,
-                // width: 200,
-                decoration: const BoxDecoration(
-                  color: kPrimaryColor,
-                  // borderRadius: BorderRadius.all(
-                  //   Radius.circular(50.0),
-                  // ),
+            const Spacer(),
+            const SizedBox(height: 15),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 50),
+              child: SizedBox(
+                width: double.infinity,
+                height: 50,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    backgroundColor: kPrimaryColor,
+                  ),
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => const SignUpScreen(),
+                      ),
+                    );
+                  },
+                  child: const Text(
+                    "Create Account",
+                    // style: TextStyle(
+
+                    // ),
+                  ),
                 ),
-                child: const Center(
-                  child: Text(
-                    'Create Account',
-                    style: TextStyle(
-                      color: Colors.white,
+              ),
+            ),
+            const SizedBox(height: 15),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 50),
+              child: SizedBox(
+                width: double.infinity,
+                height: 50,
+                child: GestureDetector(
+                  onTap:(){
+                    Navigator.of(context).pushNamed('/login');},
+                  child: Container(
+                    // height: 50,
+                    // width: 200,
+                    decoration: BoxDecoration(
+                      // color: kPrimaryColor,
+
+                      border: Border.all(
+                        color: kPrimaryColor,
+                        // width: 5.0,
+                      ),
+                      borderRadius: const BorderRadius.all(
+                        Radius.circular(50.0),
+                      ),
+                    ),
+                    child: const Center(
+                      child: Text(
+                        'Sign In',
+                        style: TextStyle(color: kPrimaryColor
+                            //fontFamily: 'Montserrat',
+                            //fontSize: 18.0,
+                            // letterSpacing: 2.0,
+                            ),
+                      ),
                     ),
                   ),
                 ),
               ),
             ),
-          ),
-          SizedBox(
-            width: double.infinity,
-            height: 50,
-            child: GestureDetector(
-              child: Container(
-                // height: 50,
-                // width: 200,
-                decoration: const BoxDecoration(
-                  //color: Colors.black54,
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(50.0),
-                  ),
-                ),
-                child: const Center(
-                  child: Text(
-                    'Create Account',
-                    style: TextStyle(color: kPrimaryColor
-                        //fontFamily: 'Montserrat',
-                        //fontSize: 18.0,
-                        // letterSpacing: 2.0,
-                        ),
-                  ),
-                ),
-              ),
-            ),
-          ),
-        ],
+            const SizedBox(height: 20),
+          ],
+        ),
       ),
     );
   }

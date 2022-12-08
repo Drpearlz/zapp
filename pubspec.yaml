@@ -20,7 +20,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.18.4 <3.0.0'
+  sdk: '>=2.18.2 <3.0.0'
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -29,12 +29,14 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  awesome_icons: ^1.1.0
   cupertino_icons: ^1.0.2
   gap:
-  awesome_icons: ^1.1.0
+
+
   flutter:
-    sdk: flutter
-  flutter_svg: ^1.1.6
+  sdk: flutter
+
 
 dev_dependencies:
 
@@ -79,6 +81,11 @@ flutter:
       fonts:
         - asset: assets/fonts/Righteous/Righteous-Regular.ttf
         - asset: assets/fonts/Raleway-Regular.ttf
+    - family: Raleway
+      fonts:
+        - asset: assets/fonts/Raleway-Regular.ttf
+        - asset: assets/fonts/Raleway-Bold.ttf     
+  #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:
