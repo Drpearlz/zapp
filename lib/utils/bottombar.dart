@@ -4,7 +4,6 @@ import 'package:zapp/screens/intro/onboarding.dart';
 import 'package:zapp/screens/intro/welcome_screen.dart';
 import 'package:zapp/screens/login/login_screen.dart';
 import 'package:zapp/screens/sign_up/sign_up.dart';
-import 'package:awesome_icons/awesome_icons.dart';
 import 'package:zapp/utils/styles.dart';
 
 class BottomBar extends StatefulWidget {
