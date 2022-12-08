@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
+
 
 class ClientScreen extends StatelessWidget {
   const ClientScreen({Key? key}) : super(key: key);
@@ -9,7 +9,7 @@ class ClientScreen extends StatelessWidget {
     return Scaffold(
       body: ListView(
         children: [
-          Text('My Account'),
+          const Text('My Account'),
           Column(
             children: [
               Row(
@@ -18,7 +18,7 @@ class ClientScreen extends StatelessWidget {
                     radius: 50,
                     backgroundImage: AssetImage('assets/images/my_pic'),
                   ),
-                  Gap(10),
+                  SizedBox(height:10,),
                   Icon(
                     Icons.edit,
                     size: 20,
@@ -26,10 +26,10 @@ class ClientScreen extends StatelessWidget {
                   ),
                 ],
               ),
-              Gap(10),
-              Text('Scientist'),
-              Gap(10),
-              Text('hibraheem160@gmail.com'),
+             const SizedBox(height:10,),
+             const Text('Scientist'),
+             const SizedBox(height:10,),
+             const Text('hibraheem160@gmail.com'),
             ],
           )
         ],

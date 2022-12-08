@@ -76,6 +76,10 @@ flutter:
     - family: Righteous
       fonts:
         - asset: assets/fonts/Righteous/Righteous-Regular.ttf
+    - family: Raleway
+      fonts:
+        - asset: assets/fonts/Raleway-Regular.ttf
+        - asset: assets/fonts/Raleway-Bold.ttf     
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

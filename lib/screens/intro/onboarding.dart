@@ -5,6 +5,6 @@ class OnboardingPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(child: const Text('onboarding'),);
+    return const Scaffold(body:Text('onboarding'),);
   }
 }
