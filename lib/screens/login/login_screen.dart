@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:zapp/screens/sign_up/sign_up.dart';
-import '../../constant.dart';
+import 'package:zapp/constant.dart';
+import 'package:zapp/utils/custom_field.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -8,91 +8,100 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
+      body:SafeArea(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment:CrossAxisAlignment.center,
           children: [
-            Spacer(flex: 2),
-            SizedBox(
-              child: Image.asset("assets/images/logo2.png"),
-            ),
-            const Spacer(),
-            const Text(
-              "Welcome to Jejelove Health !",
-              style: TextStyle(
-                color: kPrimaryColor,
-                fontFamily: 'Righteous',
-                fontWeight: FontWeight.bold,
-                fontSize: 22.0,
-                // letterSpacing: 2.0,
+            const SizedBox(height:30.88,),
+            const Text('Welcome Back',style:TextStyle(
+              fontWeight:FontWeight.w700,
+              fontSize: 20,
+              color:deepPurple,
+              fontFamily:'Raleway'
+            ),),
+             const SizedBox(height:4.41,),
+             const Text('Login',style:TextStyle(
+               fontWeight:FontWeight.w700,
+               fontSize: 32,
+               color:deepPurple,
+               fontFamily:'Raleway'
+             ),),
+              const SizedBox(height:29.87,),
+              SizedBox(
+                child:Image.asset('assets/images/Lifesavers Bust 2.png'),
               ),
+            const SizedBox(height:23.47,),
+            const Padding(
+              padding:EdgeInsets.only(left:26.47,right:8.92),
+              child:CustomField(
+                hintText:'Email',
+              )
             ),
-            const Spacer(),
-            const SizedBox(height: 15),
+            const SizedBox(
+              height:28.67,
+            ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 50),
-              child: SizedBox(
-                width: double.infinity,
-                height: 50,
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                    backgroundColor: kPrimaryColor,
-                  ),
-                  onPressed: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => const SignUpScreen(),
-                      ),
-                    );
-                  },
-                  child: const Text(
-                    "Create Account",
-                    // style: TextStyle(
-
-                    // ),
-                  ),
-                ),
+              padding:const EdgeInsets.only(left:8.47,right:26.92),
+              child: Column(
+                crossAxisAlignment:CrossAxisAlignment.end,
+                children:const [
+                 CustomField(
+                  hintText:'Password',
+                  suffixIcon:Icon(
+                    Icons.remove_red_eye,
+                    color:Color(0xFFA095C1),),),
+                   SizedBox(height:8.82,),
+                  Text('Forgot Password?',style:TextStyle(
+                    fontSize:16,
+                    fontFamily:'Raleway',
+                    fontWeight:FontWeight.w500,
+                    color:deepPurple,
+                  ),)
+                ],
               ),
             ),
-            const SizedBox(height: 15),
+            const SizedBox(height:26.47,),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 50),
-              child: SizedBox(
-                width: double.infinity,
-                height: 50,
-                child: GestureDetector(
-                  child: Container(
-                    // height: 50,
-                    // width: 200,
-                    decoration: BoxDecoration(
-                      // color: kPrimaryColor,
-
-                      border: Border.all(
-                        color: kPrimaryColor,
-                        // width: 5.0,
-                      ),
-                      borderRadius: const BorderRadius.all(
-                        Radius.circular(50.0),
-                      ),
-                    ),
-                    child: const Center(
-                      child: Text(
-                        'Sign In',
-                        style: TextStyle(color: kPrimaryColor
-                            //fontFamily: 'Montserrat',
-                            //fontSize: 18.0,
-                            // letterSpacing: 2.0,
-                            ),
-                      ),
-                    ),
-                  ),
+              padding: const EdgeInsets.only(left:17.47,right:17.92),
+              child: Container(
+                width:double.infinity,
+                height:46.47,
+                decoration:BoxDecoration(
+                  color:deepPurple,
+                  borderRadius:BorderRadius.circular(8.8224)
                 ),
+                child:const Center(child:Text('Login',style:TextStyle(
+                  color:Colors.white,
+                  fontWeight:FontWeight.w600,
+                  fontSize:16,
+                  fontFamily:'Raleway'
+                ),)),
               ),
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height:26.47,),
+            Row(
+              mainAxisAlignment:MainAxisAlignment.center,
+              children:[
+                const Text('Don\'t have an account?',style:TextStyle(
+                  fontSize:14,
+                  color:Color(0xFF82799D),
+                  fontWeight:FontWeight.w500,
+                  fontFamily:'Raleway'
+                ),),
+                const SizedBox(width:8.82,),
+               GestureDetector(
+                onTap:(){
+                  Navigator.of(context).pushNamed('/sign_up');
+                },
+                 child:const Text('Sign Up',style:TextStyle(
+                  fontFamily: 'Raleway',
+                  fontSize:14,
+                  color:deepPurple,
+                  fontWeight:FontWeight.w500,
+                 ),),
+               ),
+              ],
+            )
           ],
         ),
       ),
