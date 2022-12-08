@@ -9,3 +9,4 @@ const Color lightGray = Color(0xFFF6F6F6);
 // const Color lightGray = Color(0xFF3B3B3B);
 
 const Color mainPurple = Color(0xFF635BEB);
+const Color deepPurple = Color(0xFF432C81);
