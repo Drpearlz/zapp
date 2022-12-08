@@ -30,6 +30,8 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   cupertino_icons: ^1.0.2
+  gap:
+  awesome_icons: ^1.1.0
   flutter:
     sdk: flutter
   flutter_svg: ^1.1.6
@@ -76,7 +78,7 @@ flutter:
     - family: Righteous
       fonts:
         - asset: assets/fonts/Righteous/Righteous-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
+        - asset: assets/fonts/Raleway-Regular.ttf
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:

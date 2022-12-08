@@ -22,7 +22,7 @@ samples, guidance on mobile development, and a full API reference.
 
 [Clement Peter - Flutter Developer](https://github.com/ClementPeter)
 
-[Hammed Ibraheem Omowumi - Flutter Developer](https://github.com/Scientist265) 
+[Hammed Ibraheem Omowumi[Scientist] - Flutter Developer](https://github.com/Scientist265) 
 
 [Collins Oden - Software Engineer](https://github.com/Collinsoden22) 
 
