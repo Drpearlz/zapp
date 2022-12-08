@@ -29,13 +29,13 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
-  awesome_icons: ^1.1.0
   cupertino_icons: ^1.0.2
+  awesome_icons:
   gap:
-
+  persistent_bottom_nav_bar:
 
   flutter:
-  sdk: flutter
+    sdk: flutter
 
 
 dev_dependencies:
@@ -63,6 +63,7 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
+    - assets/specialities_assets/
     
 
   #   - images/a_dot_burr.jpeg
@@ -84,7 +85,11 @@ flutter:
     - family: Raleway
       fonts:
         - asset: assets/fonts/Raleway-Regular.ttf
-        - asset: assets/fonts/Raleway-Bold.ttf     
+        - asset: assets/fonts/Raleway-Bold.ttf
+    - family: SourceSansPro
+      fonts:
+        - asset: assets/fonts/SourceSansPro-Regular.ttf
+
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

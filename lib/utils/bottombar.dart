@@ -4,7 +4,25 @@ import 'package:zapp/screens/intro/onboarding.dart';
 import 'package:zapp/screens/intro/welcome_screen.dart';
 import 'package:zapp/screens/login/login_screen.dart';
 import 'package:zapp/screens/sign_up/sign_up.dart';
+import 'package:zapp/screens/specialities/specialities_screen.dart';
 import 'package:zapp/utils/styles.dart';
+import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
+
+// class BottomNavBar extends StatefulWidget {
+//   const BottomNavBar({Key? key}) : super(key: key);
+//
+//   @override
+//   State<BottomNavBar> createState() => _BottomNavBarState();
+// }
+//
+// class _BottomNavBarState extends State<BottomNavBar> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//         // bottomNavigationBar: BottomNavigationBar(),
+//         );
+//   }
+// }
 
 class BottomBar extends StatefulWidget {
   const BottomBar({Key? key}) : super(key: key);
@@ -22,7 +40,7 @@ class _BottomBarState extends State<BottomBar> {
       const LoginScreen(),
       const OnboardingPage(),
       const WelcomeScreen(),
-      const ClientScreen(),
+      SpecialitiesScreen(),
     ];
     void _onItemTapped(int index) {
       setState(() {

@@ -10,7 +10,7 @@ class ClientScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(
-        padding: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+        padding: EdgeInsets.symmetric(horizontal: 18, vertical: 20),
         children: [
           Gap(20),
           const Text(
@@ -84,14 +84,6 @@ class ClientScreen extends StatelessWidget {
                   const Divider(thickness: 1),
                 ],
               ),
-              const SizedBox(
-                height: 10,
-              ),
-              const Text('Scientist'),
-              const SizedBox(
-                height: 10,
-              ),
-              const Text('hibraheem160@gmail.com'),
             ],
           )
         ],

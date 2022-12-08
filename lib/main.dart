@@ -4,6 +4,7 @@ import 'package:zapp/screens/intro/onboarding.dart';
 import 'package:zapp/screens/intro/welcome_screen.dart';
 import 'package:zapp/screens/login/login_screen.dart';
 import 'package:zapp/screens/sign_up/sign_up.dart';
+import 'package:zapp/screens/specialities/specialities_screen.dart';
 import 'package:zapp/screens/splash.dart';
 
 import 'utils/bottombar.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of our application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
 
       // home: SplashScreen
@@ -38,3 +39,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+// SpecialitiesScreen()
