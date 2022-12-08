@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import '../../utils/grid_dash_board.dart';
+import 'grid_dash_board.dart';
 
 class SpecialitiesScreen extends StatelessWidget {
   @override
@@ -10,18 +10,25 @@ class SpecialitiesScreen extends StatelessWidget {
       body: Column(
         children: [
           const SizedBox(
-            height: 80,
+            height: 40,
           ),
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
             child: Row(
-              children: const [
-                Icon(
-                  Icons.arrow_back,
-                  size: 29,
+              children: [
+                // widget(
+                //   child: 29
+                IconButton(
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  icon: const Icon(
+                    Icons.arrow_back,
+                    size: 29,
+                  ),
                 ),
-                const Gap(20),
-                Text(
+                const Gap(25),
+                const Text(
                   'Specialities',
                   style: TextStyle(
                       fontSize: 25,
@@ -31,7 +38,7 @@ class SpecialitiesScreen extends StatelessWidget {
               ],
             ),
           ),
-          const Gap(15),
+          const Gap(25),
           GridDashBoard(),
         ],
       ),

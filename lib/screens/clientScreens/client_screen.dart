@@ -10,9 +10,9 @@ class ClientScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(
-        padding: EdgeInsets.symmetric(horizontal: 18, vertical: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 20),
         children: [
-          Gap(20),
+          const Gap(20),
           const Text(
             'My Account',
             style: TextStyle(
@@ -21,8 +21,7 @@ class ClientScreen extends StatelessWidget {
                 fontFamily: 'Righteous',
                 color: Color(0xFF432C81)),
           ),
-          Gap(20),
-          const Text('My Account'),
+          const Gap(20),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [

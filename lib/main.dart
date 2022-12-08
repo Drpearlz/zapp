@@ -5,9 +5,9 @@ import 'package:zapp/screens/intro/welcome_screen.dart';
 import 'package:zapp/screens/login/login_screen.dart';
 import 'package:zapp/screens/sign_up/sign_up.dart';
 import 'package:zapp/screens/specialities/specialities_screen.dart';
-import 'package:zapp/screens/splash.dart';
+import 'package:zapp/splash.dart';
 
-import 'utils/bottombar.dart';
+import 'utils/bottom_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of our application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
 
       // home: SplashScreen

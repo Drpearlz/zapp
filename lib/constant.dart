@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 //This folder contains fixed / default stuff we might use across our App
 
-//Constants variables for colors
+//Constants variables for colors of zuri flutter devs
 const kPrimaryColor = Color(0xFF635BEB);
 const Color logoRed = Color(0xFFD90000);
 const Color logoBlue = Color(0xFf0063DB);

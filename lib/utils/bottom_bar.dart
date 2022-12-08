@@ -5,6 +5,7 @@ import 'package:zapp/screens/intro/welcome_screen.dart';
 import 'package:zapp/screens/login/login_screen.dart';
 import 'package:zapp/screens/sign_up/sign_up.dart';
 import 'package:zapp/screens/specialities/specialities_screen.dart';
+import 'package:zapp/splash.dart';
 import 'package:zapp/utils/styles.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
@@ -38,9 +39,9 @@ class _BottomBarState extends State<BottomBar> {
     final List<Widget> _widgetOptions = [
       const SignUpScreen(),
       const LoginScreen(),
-      const OnboardingPage(),
-      const WelcomeScreen(),
       SpecialitiesScreen(),
+      const WelcomeScreen(),
+      const ClientScreen(),
     ];
     void _onItemTapped(int index) {
       setState(() {

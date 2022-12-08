@@ -65,14 +65,6 @@ class GridDashBoard extends StatelessWidget {
       img: 'assets/specialities_assets/paedetric_doctor.png',
       title: 'Children Doctor',
       volume: '26 Doctors');
-  Items item15 = Items(
-      img: 'assets/specialities_assets/nurse.png',
-      title: 'Nurse',
-      volume: '72 Nurses');
-  Items item16 = Items(
-      img: 'assets/specialities_assets/nurse.png',
-      title: 'Nurse',
-      volume: '72 Nurses');
 
   @override
   Widget build(BuildContext context) {
@@ -102,7 +94,7 @@ class GridDashBoard extends StatelessWidget {
             return Container(
               decoration: BoxDecoration(
                   color: const Color(0xFFD9D9D9),
-                  borderRadius: BorderRadius.circular(10)),
+                  borderRadius: BorderRadius.circular(20)),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
@@ -114,9 +106,7 @@ class GridDashBoard extends StatelessWidget {
                   Text(
                     data.title,
                     style: const TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w500,
-                    ),
+                        fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                   const Gap(8),
                   Text(

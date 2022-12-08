@@ -29,10 +29,10 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  awesome_icons: ^1.1.0
   cupertino_icons: ^1.0.2
-  awesome_icons:
   gap:
-  persistent_bottom_nav_bar:
+  persistent_bottom_nav_bar: ^5.0.2
 
   flutter:
     sdk: flutter
