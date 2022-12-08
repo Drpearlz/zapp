@@ -1,11 +1,7 @@
 import 'package:awesome_icons/awesome_icons.dart';
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
 import 'package:gap/gap.dart';
 import 'package:zapp/screens/clientScreens/client_screen_widget.dart';
-=======
-
->>>>>>> 6abe2933287fcae8e4c543be6f1f1e6d33161ce9
 
 class ClientScreen extends StatelessWidget {
   const ClientScreen({Key? key}) : super(key: key);
@@ -16,7 +12,6 @@ class ClientScreen extends StatelessWidget {
       body: ListView(
         padding: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
         children: [
-<<<<<<< HEAD
           Gap(20),
           const Text(
             'My Account',
@@ -27,9 +22,7 @@ class ClientScreen extends StatelessWidget {
                 color: Color(0xFF432C81)),
           ),
           Gap(20),
-=======
           const Text('My Account'),
->>>>>>> 6abe2933287fcae8e4c543be6f1f1e6d33161ce9
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -41,7 +34,9 @@ class ClientScreen extends StatelessWidget {
                     radius: 50,
                     backgroundImage: AssetImage('assets/images/my_pic.jpg'),
                   ),
-                  SizedBox(height:10,),
+                  SizedBox(
+                    height: 10,
+                  ),
                   Icon(
                     Icons.edit,
                     size: 40,
@@ -49,7 +44,6 @@ class ClientScreen extends StatelessWidget {
                   ),
                 ],
               ),
-<<<<<<< HEAD
               const Gap(10),
               const Text(
                 'Ibraheem Omowumi',
@@ -89,13 +83,15 @@ class ClientScreen extends StatelessWidget {
                   ClientScreenWidget(icon: Icons.language, text: 'Language'),
                   const Divider(thickness: 1),
                 ],
-              )
-=======
-             const SizedBox(height:10,),
-             const Text('Scientist'),
-             const SizedBox(height:10,),
-             const Text('hibraheem160@gmail.com'),
->>>>>>> 6abe2933287fcae8e4c543be6f1f1e6d33161ce9
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              const Text('Scientist'),
+              const SizedBox(
+                height: 10,
+              ),
+              const Text('hibraheem160@gmail.com'),
             ],
           )
         ],

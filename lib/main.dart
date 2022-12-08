@@ -18,13 +18,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of our application.
   @override
   Widget build(BuildContext context) {
-<<<<<<< HEAD
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-=======
-    return MaterialApp(
-      debugShowCheckedModeBanner:false,
->>>>>>> 6abe2933287fcae8e4c543be6f1f1e6d33161ce9
+
       // home: SplashScreen
 
       // for those that wwant to check each screens separately,

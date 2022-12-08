@@ -88,7 +88,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.1"
-<<<<<<< HEAD
   js:
     dependency: transitive
     description:
@@ -96,8 +95,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.6.4"
-=======
->>>>>>> 6abe2933287fcae8e4c543be6f1f1e6d33161ce9
   lints:
     dependency: transitive
     description:
