@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:zapp/screens/clientScreens/client_screen_widget.dart';
 
+import '../../constant.dart';
+
 class ClientScreen extends StatelessWidget {
   const ClientScreen({Key? key}) : super(key: key);
 
@@ -10,48 +12,87 @@ class ClientScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(
-        padding: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 20),
         children: [
-          Gap(20),
+          const Gap(20),
           const Text(
             'My Account',
             style: TextStyle(
-                fontSize: 30,
-                fontWeight: FontWeight.bold,
-                fontFamily: 'Righteous',
-                color: Color(0xFF432C81)),
+              fontSize: 30,
+              fontWeight: FontWeight.bold,
+              fontFamily: 'Righteous',
+              color: Color(0xFF432C81),
+            ),
           ),
-          Gap(20),
-          const Text('My Account'),
+          const Gap(20),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
-                  Gap(20),
-                  CircleAvatar(
-                    radius: 50,
-                    backgroundImage: AssetImage('assets/images/my_pic.jpg'),
-                  ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Icon(
-                    Icons.edit,
-                    size: 40,
-                    color: Color(0xFF432C81),
-                  ),
-                ],
+              SizedBox(
+                height: 115,
+                width: 115,
+                child: Stack(
+                  fit: StackFit.expand,
+                  clipBehavior: Clip.none,
+                  children: [
+                    CircleAvatar(
+                      backgroundColor: kPrimaryColor,
+                      backgroundImage: AssetImage("assets/images/my_pic.jpg"),
+                    ),
+                    Positioned(
+                      right: -16,
+                      bottom: 0,
+                      child: SizedBox(
+                        height: 46,
+                        width: 46,
+                        child: TextButton(
+                          style: TextButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(50),
+                              side: BorderSide(color: Colors.white),
+                            ),
+                            // primary: Colors.white,
+                            backgroundColor: Color(0xFFF5F6F9),
+                          ),
+                          onPressed: () {},
+                          child: Icon(
+                            Icons.camera_alt,
+                            size: 20,
+                            color: Color(0xFF432C81),
+                          ),
+                        ),
+                      ),
+                    )
+                  ],
+                ),
               ),
+              // Row(
+              //   mainAxisAlignment: MainAxisAlignment.center,
+              //   children: const [
+              //     Gap(20),
+              //     CircleAvatar(
+              //       radius: 50,
+              //       backgroundImage: AssetImage('assets/images/my_pic.jpg'),
+              //     ),
+              //     SizedBox(
+              //       height: 10,
+              //     ),
+              //     Icon(
+              //       Icons.edit,
+              //       size: 40,
+              //       color: Color(0xFF432C81),
+              //     ),
+              //   ],
+              // ),
               const Gap(10),
               const Text(
                 'Ibraheem Omowumi',
                 style: TextStyle(
-                    color: Color(0xFF432C81),
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
-                    fontFamily: 'Raleway'),
+                  color: Color(0xFF432C81),
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Raleway',
+                ),
               ),
               const Gap(5),
               const Text(
@@ -84,14 +125,6 @@ class ClientScreen extends StatelessWidget {
                   const Divider(thickness: 1),
                 ],
               ),
-              const SizedBox(
-                height: 10,
-              ),
-              const Text('Scientist'),
-              const SizedBox(
-                height: 10,
-              ),
-              const Text('hibraheem160@gmail.com'),
             ],
           )
         ],

@@ -4,7 +4,11 @@ import 'package:zapp/screens/intro/onboarding.dart';
 import 'package:zapp/screens/intro/welcome_screen.dart';
 import 'package:zapp/screens/login/login_screen.dart';
 import 'package:zapp/screens/sign_up/sign_up.dart';
+import 'package:zapp/screens/specialities/specialities_screen.dart';
+import 'package:zapp/splash.dart';
+import 'package:zapp/utils/health_logo.dart';
 import 'package:zapp/utils/styles.dart';
+import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
 class BottomBar extends StatefulWidget {
   const BottomBar({Key? key}) : super(key: key);
@@ -19,8 +23,9 @@ class _BottomBarState extends State<BottomBar> {
   Widget build(BuildContext context) {
     final List<Widget> _widgetOptions = [
       const SignUpScreen(),
-      const LoginScreen(),
-      const OnboardingPage(),
+      const HealthLogo(),
+      //const LoginScreen(),
+      SpecialitiesScreen(),
       const WelcomeScreen(),
       const ClientScreen(),
     ];
@@ -31,7 +36,7 @@ class _BottomBarState extends State<BottomBar> {
     }
 
     return Scaffold(
-      backgroundColor: const Color(0xFF7B6CA8),
+      // backgroundColor: const Color(0xFF7B6CA8),
       body: Center(
         child: _widgetOptions[_selectedindex],
       ),
