@@ -23,7 +23,7 @@ class GridDashBoard extends StatelessWidget {
       volume: '38 Doctors');
   Items item4 = Items(
       img: 'assets/specialities_assets/syringe.png',
-      title: 'MedLab\Technician',
+      title: 'MedLab Technician',
       volume: '39 Technicians');
   Items item5 = Items(
       img: 'assets/specialities_assets/chemist.png',
