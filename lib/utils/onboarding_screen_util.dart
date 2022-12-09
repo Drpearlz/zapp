@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:zapp/constant.dart';
 
 class OnboardingScreenUtil extends StatelessWidget {
   final String backgroundImg;
@@ -39,7 +40,8 @@ class OnboardingScreenUtil extends StatelessWidget {
                   colors: [
                     Color(0x007d77ee),
                     //Color(0x928ef1),
-                    Color(0xFF635BEB),
+                    //Color(0xFF635BEB),
+                    kPrimaryColor,
                   ],
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
@@ -83,12 +85,17 @@ class OnboardingScreenUtil extends StatelessWidget {
               const SizedBox(
                 height: 40.0,
               ),
-              Text(
-                nextMsg,
-                style: const TextStyle(
-                  color: Colors.white,
-                  fontSize: 14,
-                  fontWeight: FontWeight.bold,
+              GestureDetector(
+                onTap: () {
+                  Navigator.pusheNamed(context, '/welcome');
+                },
+                child: Text(
+                  nextMsg,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 14,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
               const SizedBox(
@@ -167,7 +174,7 @@ class OnboardingScreenUtil extends StatelessWidget {
                             Text(
                               buttonText,
                               style: const TextStyle(
-                                color: Color(0xFF635BEB),
+                                color: kPrimaryColor, //Color(0xFF635BEB),
                                 fontWeight: FontWeight.w700,
                                 fontSize: 18,
                               ),
@@ -177,7 +184,7 @@ class OnboardingScreenUtil extends StatelessWidget {
                             ),
                             const Icon(
                               Icons.arrow_forward_ios,
-                              color: Color(0xFF635BEB),
+                              color: kPrimaryColor, //Color(0xFF635BEB),
                             ),
                           ],
                         ),
