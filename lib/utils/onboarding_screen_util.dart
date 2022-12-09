@@ -87,7 +87,7 @@ class OnboardingScreenUtil extends StatelessWidget {
               ),
               GestureDetector(
                 onTap: () {
-                  Navigator.pusheNamed(context, '/welcome');
+                  Navigator.pushNamed(context, '/welcome');
                 },
                 child: Text(
                   nextMsg,
