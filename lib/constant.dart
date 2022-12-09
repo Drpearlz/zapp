@@ -12,3 +12,10 @@ const Color white = Colors.white;
 
 const Color mainPurple = Color(0xFF635BEB);
 const Color deepPurple = Color(0xFF432C81);
+
+//menu screen consts
+const menuTextSize = 20.0;
+const cardColor = Colors.white60;
+const menuFontWeight = FontWeight.w700;
+const menuFontFamily = 'Raleway';
+final cardShape = RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0));
