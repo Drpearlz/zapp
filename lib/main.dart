@@ -5,6 +5,7 @@ import 'package:zapp/screens/intro/welcome_screen.dart';
 import 'package:zapp/screens/login/login_screen.dart';
 import 'package:zapp/screens/sign_up/sign_up.dart';
 import 'package:zapp/screens/splash.dart';
+import 'package:zapp/screens/menu/menu.dart';
 
 import 'utils/bottombar.dart';
 
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
       //   '/onboarding': (context) => const OnboardingPage(),
       //   '/login': (context) => const LoginScreen(),
       // },
-      home: BottomBar(),
+      home: Menu(),
     );
   }
 }
