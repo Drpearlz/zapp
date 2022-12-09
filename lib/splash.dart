@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:zapp/constant.dart';
 import 'package:zapp/screens/intro/welcome_screen.dart';
+import 'package:zapp/utils/health_logo.dart';
 
 //Splash screen - Displays logo for 2 seconds and mocves to next screen
 class SplashScreen extends StatelessWidget {
@@ -22,10 +23,11 @@ class SplashScreen extends StatelessWidget {
         color: Colors.white,
         child: Stack(
           children: [
-            Align(
-              alignment: Alignment.center,
-              child: Image.asset('assets/images/logo2.png'),
-            ),
+            // Align(
+            //   alignment: Alignment.center,
+            //   child: Image.asset('assets/images/logo2.png'),
+            // ),
+            HealthLogo(),
             Align(
               alignment: Alignment.bottomCenter,
               child: Container(
