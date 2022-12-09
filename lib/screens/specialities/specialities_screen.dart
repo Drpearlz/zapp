@@ -24,7 +24,8 @@ class SpecialitiesScreen extends StatelessWidget {
                   },
                   icon: const Icon(
                     Icons.arrow_back,
-                    size: 29,
+                    color: Color(0xFF432C81),
+                    size: 32,
                   ),
                 ),
                 const Gap(25),
@@ -32,7 +33,7 @@ class SpecialitiesScreen extends StatelessWidget {
                   'Specialities',
                   style: TextStyle(
                       fontSize: 25,
-                      fontWeight: FontWeight.w700,
+                      fontWeight: FontWeight.bold,
                       fontFamily: 'SourceSansPro'),
                 ),
               ],

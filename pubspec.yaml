@@ -88,7 +88,7 @@ flutter:
         - asset: assets/fonts/Raleway-Bold.ttf
     - family: SourceSansPro
       fonts:
-        - asset: assets/fonts/SourceSansPro-Regular.ttf
+        - asset: assets/fonts/SourceSansPro-Bold.ttf
 
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic

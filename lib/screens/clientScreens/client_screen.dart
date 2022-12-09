@@ -27,36 +27,41 @@ class ClientScreen extends StatelessWidget {
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
-                  Gap(20),
-                  CircleAvatar(
+                children: [
+                  const Gap(20),
+                  const CircleAvatar(
                     radius: 50,
                     backgroundImage: AssetImage('assets/images/my_pic.jpg'),
                   ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Icon(
-                    Icons.edit,
-                    size: 40,
-                    color: Color(0xFF432C81),
+                  const Gap(20),
+                  IconButton(
+                    onPressed: () {
+                      print('You\'re editing your Profile');
+                    },
+                    icon: const Icon(
+                      Icons.edit,
+                      size: 40,
+                      color: Color(0xFF432C81),
+                    ),
                   ),
                 ],
               ),
               const Gap(10),
               const Text(
-                'Ibraheem Omowumi',
+                'Scientist',
                 style: TextStyle(
                     color: Color(0xFF432C81),
-                    fontSize: 30,
+                    fontSize: 35,
                     fontWeight: FontWeight.bold,
                     fontFamily: 'Raleway'),
               ),
               const Gap(5),
               const Text(
                 'hibraheem160@gmail.com',
-                style:
-                    TextStyle(color: Color(0xFFA99Fc6), fontFamily: 'Raleway'),
+                style: TextStyle(
+                    color: Color(0xFF7B6CA8),
+                    fontFamily: 'Raleway',
+                    fontSize: 15),
               ),
               const Gap(30),
               Column(
