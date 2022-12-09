@@ -115,44 +115,48 @@ class OnboardingScreenUtil extends StatelessWidget {
                           Container(
                             height: 5.0,
                             width: 22.0,
-                            decoration: const BoxDecoration(
-                              color: Colors.blue,
+                            decoration: BoxDecoration(
+                              color: Colors.white.withOpacity(0.5),
                               borderRadius:
                                   BorderRadius.all(Radius.circular(20)),
                             ),
                           ),
+                          const SizedBox(width: 3,),
                           Container(
                             height: 5.0,
                             width: 22.0,
-                            decoration: const BoxDecoration(
-                              color: Colors.blue,
+                            decoration: BoxDecoration(
+                              color: Colors.white.withOpacity(0.5),
                               borderRadius:
                                   BorderRadius.all(Radius.circular(20)),
                             ),
                           ),
+                          const SizedBox(width: 3,),
                           Container(
                             height: 5.0,
                             width: 22.0,
-                            decoration: const BoxDecoration(
-                              color: Colors.blue,
+                            decoration: BoxDecoration(
+                              color: Colors.white.withOpacity(0.5),
                               borderRadius:
                                   BorderRadius.all(Radius.circular(20)),
                             ),
                           ),
+                          const SizedBox(width: 3,),
                           Container(
                             height: 5.0,
                             width: 22.0,
-                            decoration: const BoxDecoration(
-                              color: Colors.blue,
+                            decoration: BoxDecoration(
+                              color: Colors.white.withOpacity(0.5),
                               borderRadius:
                                   BorderRadius.all(Radius.circular(20)),
                             ),
                           ),
+                          const SizedBox(width: 3,),
                           Container(
                             height: 5.0,
                             width: 22.0,
-                            decoration: const BoxDecoration(
-                              color: Colors.blue,
+                            decoration: BoxDecoration(
+                              color: Colors.white.withOpacity(0.5),
                               borderRadius:
                                   BorderRadius.all(Radius.circular(20)),
                             ),
