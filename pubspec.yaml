@@ -31,20 +31,13 @@ environment:
 dependencies:
   awesome_icons: ^1.1.0
   cupertino_icons: ^1.0.2
-  gap:
+  flutter:
+      sdk: flutter
+  flutter_svg: ^1.1.6
+  gap: ^2.0.1
   persistent_bottom_nav_bar: ^5.0.2
 
-  flutter:
-    sdk: flutter
-
-
 dev_dependencies:
-
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
   flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
@@ -64,7 +57,6 @@ flutter:
     - assets/images/
     - assets/icons/
     - assets/specialities_assets/
-    
 
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
@@ -81,7 +73,7 @@ flutter:
     - family: Righteous
       fonts:
         - asset: assets/fonts/Righteous/Righteous-Regular.ttf
-        - asset: assets/fonts/Raleway-Regular.ttf
+        # - asset: assets/fonts/Raleway-Regular.ttf
     - family: Raleway
       fonts:
         - asset: assets/fonts/Raleway-Regular.ttf
@@ -90,6 +82,7 @@ flutter:
       fonts:
         - asset: assets/fonts/SourceSansPro-Bold.ttf
 
+        - asset: assets/fonts/SourceSansPro-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
