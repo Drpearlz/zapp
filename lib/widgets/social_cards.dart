@@ -20,7 +20,7 @@ class SocialCard extends StatelessWidget {
       child: Container(
         margin:
             const EdgeInsets.symmetric(horizontal: 10),
-        padding: EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         height:50,
                 width: 50,
         decoration: const BoxDecoration(

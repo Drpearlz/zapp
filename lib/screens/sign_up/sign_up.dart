@@ -149,7 +149,7 @@ class SignUpScreen extends StatelessWidget {
                           child: const Center(
                             child: Text.rich(
                               TextSpan(
-                                text: "Are you a heath worker ? ",
+                                text: "Are you a health worker ? ",
                                 style: TextStyle(
                                   color: white,
                                   fontSize: 20,

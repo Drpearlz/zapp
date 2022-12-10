@@ -123,7 +123,7 @@ class OnboardingScreenUtil extends StatelessWidget {
                             decoration: BoxDecoration(
                               color: Colors.white.withOpacity(0.5),
                               borderRadius:
-                                  BorderRadius.all(Radius.circular(20)),
+                                  const BorderRadius.all(Radius.circular(20)),
                             ),
                           ),
                           const SizedBox(width: 3,),
@@ -133,7 +133,7 @@ class OnboardingScreenUtil extends StatelessWidget {
                             decoration: BoxDecoration(
                               color: Colors.white.withOpacity(0.5),
                               borderRadius:
-                                  BorderRadius.all(Radius.circular(20)),
+                                  const BorderRadius.all(Radius.circular(20)),
                             ),
                           ),
                           const SizedBox(width: 3,),
@@ -143,7 +143,7 @@ class OnboardingScreenUtil extends StatelessWidget {
                             decoration: BoxDecoration(
                               color: Colors.white.withOpacity(0.5),
                               borderRadius:
-                                  BorderRadius.all(Radius.circular(20)),
+                                  const BorderRadius.all(Radius.circular(20)),
                             ),
                           ),
                           const SizedBox(width: 3,),
@@ -153,7 +153,7 @@ class OnboardingScreenUtil extends StatelessWidget {
                             decoration: BoxDecoration(
                               color: Colors.white.withOpacity(0.5),
                               borderRadius:
-                                  BorderRadius.all(Radius.circular(20)),
+                                  const BorderRadius.all(Radius.circular(20)),
                             ),
                           ),
                           const SizedBox(width: 3,),
@@ -163,7 +163,7 @@ class OnboardingScreenUtil extends StatelessWidget {
                             decoration: BoxDecoration(
                               color: Colors.white.withOpacity(0.5),
                               borderRadius:
-                                  BorderRadius.all(Radius.circular(20)),
+                                  const BorderRadius.all(Radius.circular(20)),
                             ),
                           ),
                         ],
