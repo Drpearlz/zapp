@@ -84,7 +84,9 @@ class LoginScreen extends StatelessWidget {
               Row(
                 mainAxisAlignment:MainAxisAlignment.center,
                 children:[
-                  const Text('Don\'t have an account?',style:TextStyle(
+                  const Text(
+                    "Don't have an account?",
+                    style: TextStyle(
                     fontSize:14,
                     color:Color(0xFF82799D),
                     fontWeight:FontWeight.w500,
@@ -103,7 +105,7 @@ class LoginScreen extends StatelessWidget {
                    ),),
                  ),
                 ],
-              )
+              ),
             ],
           ),
         ),

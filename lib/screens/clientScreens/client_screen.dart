@@ -39,7 +39,7 @@ class ClientScreen extends StatelessWidget {
                   const Gap(20),
                   IconButton(
                     onPressed: () {
-                      print('You\'re editing your Profile');
+                      print("You're editing your Profile");
                     },
                     icon: const Icon(
                       Icons.edit,
@@ -56,7 +56,7 @@ class ClientScreen extends StatelessWidget {
                   fit: StackFit.expand,
                   clipBehavior: Clip.none,
                   children: [
-                    CircleAvatar(
+                    const CircleAvatar(
                       backgroundColor: kPrimaryColor,
                       backgroundImage: AssetImage("assets/images/my_pic.jpg"),
                     ),
@@ -70,13 +70,13 @@ class ClientScreen extends StatelessWidget {
                           style: TextButton.styleFrom(
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(50),
-                              side: BorderSide(color: Colors.white),
+                              side: const BorderSide(color: Colors.white),
                             ),
                             // primary: Colors.white,
-                            backgroundColor: Color(0xFFF5F6F9),
+                            backgroundColor: const Color(0xFFF5F6F9),
                           ),
                           onPressed: () {},
-                          child: Icon(
+                          child: const Icon(
                             Icons.camera_alt,
                             size: 20,
                             color: Color(0xFF432C81),
@@ -133,22 +133,22 @@ class ClientScreen extends StatelessWidget {
                     print('Account details');
                   }),
               const Divider(thickness: 1.0),
-              ClientScreenWidget(
+              const ClientScreenWidget(
                   icon: Icons.event_note_sharp, text: 'Medical Record'),
               const Divider(thickness: 1),
-              ClientScreenWidget(
+              const ClientScreenWidget(
                   icon: Icons.notifications, text: 'Notification'),
               const Divider(thickness: 1),
-              ClientScreenWidget(
+              const ClientScreenWidget(
                   icon: Icons.remove_red_eye, text: 'Appearance'),
               const Divider(thickness: 1),
-              ClientScreenWidget(
+              const ClientScreenWidget(
                   icon: Icons.shield, text: 'Privacy and Security'),
               const Divider(thickness: 1),
-              ClientScreenWidget(
+              const ClientScreenWidget(
                   icon: FontAwesomeIcons.speakerDeck, text: 'Sound'),
               const Divider(thickness: 1),
-              ClientScreenWidget(icon: Icons.language, text: 'Language'),
+              const ClientScreenWidget(icon: Icons.language, text: 'Language'),
               const Divider(thickness: 1),
             ],
           ),
