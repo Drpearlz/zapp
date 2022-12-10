@@ -115,11 +115,7 @@ packages:
       name: material_color_utilities
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
     version: "0.1.5"
-=======
-    version: "0.1.4"
->>>>>>> 06adae0f57aab082d640ed321163b685649dffe4
   meta:
     dependency: transitive
     description:
