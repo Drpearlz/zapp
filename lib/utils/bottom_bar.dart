@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zapp/screens/booking/booking_screen.dart';
 import 'package:zapp/screens/clientScreens/client_screen.dart';
 import 'package:zapp/screens/intro/welcome_screen.dart';
 import 'package:zapp/screens/login/login_screen.dart';
@@ -48,7 +49,7 @@ class _BottomBarState extends State<BottomBar> {
       const HealthLogo(),
       //const LoginScreen(),
       SpecialitiesScreen(),
-      const WelcomeScreen(),
+      const BookingScreen(),
       const ClientScreen(),
     ];
 

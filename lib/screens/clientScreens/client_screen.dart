@@ -70,27 +70,27 @@ class ClientScreen extends StatelessWidget {
           ),
           const Gap(30),
           Column(
-            children: [
-              const Divider(thickness: 1),
+            children: const [
+              Divider(thickness: 1),
               ClientScreenWidget(icon: Icons.person, text: 'Account'),
-              const Divider(thickness: 1.0),
+              Divider(thickness: 1.0),
               ClientScreenWidget(
                   icon: Icons.event_note_sharp, text: 'Medical Record'),
-              const Divider(thickness: 1),
+              Divider(thickness: 1),
               ClientScreenWidget(
                   icon: Icons.notifications, text: 'Notification'),
-              const Divider(thickness: 1),
+              Divider(thickness: 1),
               ClientScreenWidget(
                   icon: Icons.remove_red_eye, text: 'Appearance'),
-              const Divider(thickness: 1),
+              Divider(thickness: 1),
               ClientScreenWidget(
                   icon: Icons.shield, text: 'Privacy and Security'),
-              const Divider(thickness: 1),
+              Divider(thickness: 1),
               ClientScreenWidget(
                   icon: FontAwesomeIcons.speakerDeck, text: 'Sound'),
-              const Divider(thickness: 1),
+              Divider(thickness: 1),
               ClientScreenWidget(icon: Icons.language, text: 'Language'),
-              const Divider(thickness: 1),
+              Divider(thickness: 1),
             ],
           ),
         ],
@@ -98,41 +98,3 @@ class ClientScreen extends StatelessWidget {
     );
   }
 }
-/* SizedBox(
-                height: 115,
-                width: 115,
-                child: Stack(
-                  fit: StackFit.expand,
-                  clipBehavior: Clip.none,
-                  children: [
-                    CircleAvatar(
-                      backgroundColor: kPrimaryColor,
-                      backgroundImage: AssetImage("assets/images/my_pic.jpg"),
-                    ),
-                    Positioned(
-                      right: -16,
-                      bottom: 0,
-                      child: SizedBox(
-                        height: 46,
-                        width: 46,
-                        child: TextButton(
-                          style: TextButton.styleFrom(
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(50),
-                              side: BorderSide(color: Colors.white),
-                            ),
-                            // primary: Colors.white,
-                            backgroundColor: Color(0xFFF5F6F9),
-                          ),
-                          onPressed: () {},
-                          child: Icon(
-                            Icons.camera_alt,
-                            size: 20,
-                            color: Color(0xFF432C81),
-                          ),
-                        ),
-                      ),
-                    )
-                  ],
-                ),
-              ),*/

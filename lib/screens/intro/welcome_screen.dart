@@ -49,7 +49,7 @@ class WelcomeScreen extends StatelessWidget {
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20),
                           ),
-                          backgroundColor: kPrimaryColor,
+                          primary: kPrimaryColor,
                         ),
                         onPressed: () {
                           Navigator.of(context).push(

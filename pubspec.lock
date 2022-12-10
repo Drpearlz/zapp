@@ -81,6 +81,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  font_awesome_flutter:
+    dependency: "direct main"
+    description:
+      name: font_awesome_flutter
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "10.3.0"
   gap:
     dependency: "direct main"
     description:
@@ -157,7 +164,7 @@ packages:
       name: petitparser
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "5.1.0"
+    version: "5.0.0"
   recase:
     dependency: transitive
     description:
@@ -227,5 +234,5 @@ packages:
     source: hosted
     version: "6.1.0"
 sdks:
-  dart: ">=2.18.2 <3.0.0"
+  dart: ">=2.18.0 <3.0.0"
   flutter: ">=2.11.0-0.1.pre"

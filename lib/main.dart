@@ -5,8 +5,10 @@ import 'package:zapp/screens/intro/welcome_screen.dart';
 import 'package:zapp/screens/login/login_screen.dart';
 import 'package:zapp/screens/sign_up/sign_up.dart';
 import 'package:zapp/screens/specialities/specialities_screen.dart';
+import 'package:zapp/screens/intro/onboarding_screen.dart';
 import 'package:zapp/splash.dart';
 import 'package:zapp/utils/health_logo.dart';
+
 
 import 'utils/bottom_bar.dart';
 
@@ -36,7 +38,8 @@ class MyApp extends StatelessWidget {
       //   '/onboarding': (context) => const OnboardingPage(),
       //   '/login': (context) => const LoginScreen(),
       // },
-      home: BottomBar(),
+      //home: BottomBar(),
+      home: OnboardingScreen(),
     );
   }
 }

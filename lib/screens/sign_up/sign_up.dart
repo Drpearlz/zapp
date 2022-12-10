@@ -95,7 +95,7 @@ class SignUpScreen extends StatelessWidget {
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(50),
                                 ),
-                                backgroundColor: kPrimaryColor,
+                                primary: kPrimaryColor,
                               ),
                               onPressed: () {},
                               child: const Text(
