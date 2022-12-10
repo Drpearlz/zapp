@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:zapp/screens/clientScreens/client_screen.dart';
-import 'package:zapp/screens/intro/onboarding.dart';
 import 'package:zapp/screens/intro/welcome_screen.dart';
 import 'package:zapp/screens/login/login_screen.dart';
 import 'package:zapp/screens/sign_up/sign_up.dart';
@@ -22,7 +21,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of our application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
 
       // home: SplashScreen
@@ -31,16 +30,17 @@ class MyApp extends StatelessWidget {
       // just edit the '/' in the initial route to any of the routes e.g '/login'
       // initialRoute: '/',
       // // This is the routes for the different screens so far
-      // routes: {
-      //   '/': (context) => const ClientScreen(),
-      //   '/sign_up': (context) => const SignUpScreen(),
-      //   '/welcome': (context) => const WelcomeScreen(),
-      //   '/onboarding': (context) => const OnboardingPage(),
-      //   '/login': (context) => const LoginScreen(),
-      // },
+      
       //home: BottomBar(),
-      home: OnboardingScreen(),
-    );
-  }
-}
+      // home: const SplashScreen(),
+    routes: {
+        '/': (context) => const SplashScreen(),
+        '/sign_up': (context) => const SignUpScreen(),
+        '/welcome': (context) => const WelcomeScreen(),
+        '/onboarding': (context) => const OnboardingScreen(),
+        '/bottombar':(context) => const BottomBar(),
+        '/login': (context) => const LoginScreen(),
+      },
+);
+  }}
 // SpecialitiesScreen()

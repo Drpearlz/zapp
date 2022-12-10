@@ -39,7 +39,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             backgroundImg: 'assets/images/onboarding_2.png',
             onBoardMsgHeading: 'Help on-the-go',
             onBoardMsgBody:
-                'Chat with licensed professionals\n\t\t\t\t\t\t\t\t\t\t\t\t\on the go, via mobile',
+                'Chat with licensed professionals\non the go, via mobile',
           ),
           OnboardingScreenUtil(
             backgroundImg: 'assets/images/onboarding_3.png',
