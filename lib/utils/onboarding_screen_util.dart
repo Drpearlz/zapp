@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:zapp/constant.dart';
+import 'package:zapp/screens/intro/welcome_screen.dart';
 
 class OnboardingScreenUtil extends StatelessWidget {
   final String backgroundImg;
@@ -87,7 +88,11 @@ class OnboardingScreenUtil extends StatelessWidget {
               ),
               GestureDetector(
                 onTap: () {
-                  Navigator.pushNamed(context, '/welcome');
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => const WelcomeScreen(),
+                    ),
+                  );
                 },
                 child: Text(
                   nextMsg,
@@ -118,7 +123,7 @@ class OnboardingScreenUtil extends StatelessWidget {
                             decoration: BoxDecoration(
                               color: Colors.white.withOpacity(0.5),
                               borderRadius:
-                                  BorderRadius.all(Radius.circular(20)),
+                                  const BorderRadius.all(Radius.circular(20)),
                             ),
                           ),
                           const SizedBox(width: 3,),
@@ -128,7 +133,7 @@ class OnboardingScreenUtil extends StatelessWidget {
                             decoration: BoxDecoration(
                               color: Colors.white.withOpacity(0.5),
                               borderRadius:
-                                  BorderRadius.all(Radius.circular(20)),
+                                  const BorderRadius.all(Radius.circular(20)),
                             ),
                           ),
                           const SizedBox(width: 3,),
@@ -138,7 +143,7 @@ class OnboardingScreenUtil extends StatelessWidget {
                             decoration: BoxDecoration(
                               color: Colors.white.withOpacity(0.5),
                               borderRadius:
-                                  BorderRadius.all(Radius.circular(20)),
+                                  const BorderRadius.all(Radius.circular(20)),
                             ),
                           ),
                           const SizedBox(width: 3,),
@@ -148,7 +153,7 @@ class OnboardingScreenUtil extends StatelessWidget {
                             decoration: BoxDecoration(
                               color: Colors.white.withOpacity(0.5),
                               borderRadius:
-                                  BorderRadius.all(Radius.circular(20)),
+                                  const BorderRadius.all(Radius.circular(20)),
                             ),
                           ),
                           const SizedBox(width: 3,),
@@ -158,7 +163,7 @@ class OnboardingScreenUtil extends StatelessWidget {
                             decoration: BoxDecoration(
                               color: Colors.white.withOpacity(0.5),
                               borderRadius:
-                                  BorderRadius.all(Radius.circular(20)),
+                                  const BorderRadius.all(Radius.circular(20)),
                             ),
                           ),
                         ],

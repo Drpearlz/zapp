@@ -30,14 +30,14 @@ class BottomIndicatorBar extends StatefulWidget {
 }
 
 class _BottomIndicatorBarState extends State<BottomIndicatorBar> {
-  static const double BAR_HEIGHT = 60;
-  static const double INDICATOR_HEIGHT = 2;
-
+  static const double barHeight = 44;
+  static const double indicatorHeight = 2;
+  // This part of code get as e be i'll look forward to review in future
   List<BottomIndicatorNavigationBarItem> get items => widget.items;
 
   double width = 0;
   late Color activeColor;
-  Duration duration = Duration(milliseconds: 170);
+  Duration duration = Duration(milliseconds: 40);
 
   double? _getIndicatorPosition(int index) {
     var isLtr = Directionality.of(context) == TextDirection.ltr;
@@ -59,7 +59,7 @@ class _BottomIndicatorBarState extends State<BottomIndicatorBar> {
     activeColor = widget.activeColor;
 
     return Container(
-      height: BAR_HEIGHT + MediaQuery.of(context).viewPadding.bottom,
+      height: barHeight + MediaQuery.of(context).viewPadding.bottom,
       width: width,
       decoration: BoxDecoration(
         color: Theme.of(context).cardColor,
@@ -72,7 +72,7 @@ class _BottomIndicatorBarState extends State<BottomIndicatorBar> {
       child: Stack(
         children: <Widget>[
           Positioned(
-            top: INDICATOR_HEIGHT,
+            top: indicatorHeight,
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: items.map((item) {
@@ -95,7 +95,7 @@ class _BottomIndicatorBarState extends State<BottomIndicatorBar> {
               child: Container(
                 color: widget.indicatorColor,
                 width: width / items.length,
-                height: INDICATOR_HEIGHT,
+                height: indicatorHeight,
               ),
             ),
           ),
@@ -124,7 +124,7 @@ class _BottomIndicatorBarState extends State<BottomIndicatorBar> {
       BottomIndicatorNavigationBarItem item, bool isSelected) {
     return Container(
       color: item.backgroundColor,
-      height: BAR_HEIGHT,
+      height: barHeight,
       width: width / items.length,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,

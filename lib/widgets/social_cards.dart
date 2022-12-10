@@ -19,8 +19,8 @@ class SocialCard extends StatelessWidget {
       onTap: press as void Function()?,
       child: Container(
         margin:
-            EdgeInsets.symmetric(horizontal: 10),
-        padding: EdgeInsets.all(10),
+            const EdgeInsets.symmetric(horizontal: 10),
+        padding: const EdgeInsets.all(10),
         height:50,
                 width: 50,
         decoration: const BoxDecoration(

@@ -65,7 +65,7 @@ class _BottomBarState extends State<BottomBar> {
         },
         items: bottomNavItems,
         activeColor: const Color(0xFF7B6CA8),
-        inactiveColor: Colors.black45,
+        inactiveColor: Colors.black,
         indicatorColor: const Color(0xFF7B6CA8),
       ),
     );

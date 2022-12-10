@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:zapp/screens/clientScreens/client_screen_widget.dart';
 
-import '../../constant.dart';
-
 class ClientScreen extends StatelessWidget {
   const ClientScreen({Key? key}) : super(key: key);
 
@@ -38,9 +36,7 @@ class ClientScreen extends StatelessWidget {
                   ),
                   const Gap(10),
                   IconButton(
-                    onPressed: () {
-                      print('You\'re editing your Profile');
-                    },
+                    onPressed: () => 'profile edited',
                     icon: const Icon(
                       Icons.edit,
                       size: 40,
