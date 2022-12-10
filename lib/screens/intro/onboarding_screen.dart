@@ -53,7 +53,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   void initState() {
     super.initState();
     Timer.periodic(Duration(seconds: 3), (Timer timer) {
-      if (currentIndex < 2) {
+      if (currentIndex < 4) {
         currentIndex++;
         pageController.animateToPage(
           currentIndex,
@@ -61,7 +61,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       curve: Curves.easeIn,
         );
       } else {
-        currentIndex = 2;
+        currentIndex = 4;
       }
     });
   }
