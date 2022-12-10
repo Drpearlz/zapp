@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:zapp/screens/clientScreens/client_screen_widget.dart';
 
+import '../../constant.dart';
+
 class ClientScreen extends StatelessWidget {
   const ClientScreen({Key? key}) : super(key: key);
 
@@ -10,90 +12,146 @@ class ClientScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(
-        padding: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 20),
         children: [
-          Gap(20),
+          const Gap(20),
           const Text(
             'My Account',
             style: TextStyle(
-                fontSize: 30,
-                fontWeight: FontWeight.bold,
-                fontFamily: 'Righteous',
-                color: Color(0xFF432C81)),
+              fontSize: 30,
+              fontWeight: FontWeight.bold,
+              fontFamily: 'Righteous',
+              color: Color(0xFF432C81),
+            ),
           ),
-          Gap(20),
-          const Text('My Account'),
+          const Gap(20),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
-                  Gap(20),
-                  CircleAvatar(
+                children: [
+                  const Gap(20),
+                  const CircleAvatar(
                     radius: 50,
                     backgroundImage: AssetImage('assets/images/my_pic.jpg'),
                   ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Icon(
-                    Icons.edit,
-                    size: 40,
-                    color: Color(0xFF432C81),
+                  const Gap(20),
+                  IconButton(
+                    onPressed: () {
+                      print('You\'re editing your Profile');
+                    },
+                    icon: const Icon(
+                      Icons.edit,
+                      size: 40,
+                      color: Color(0xFF432C81),
+                    ),
                   ),
                 ],
               ),
+              SizedBox(
+                height: 115,
+                width: 115,
+                child: Stack(
+                  fit: StackFit.expand,
+                  clipBehavior: Clip.none,
+                  children: [
+                    CircleAvatar(
+                      backgroundColor: kPrimaryColor,
+                      backgroundImage: AssetImage("assets/images/my_pic.jpg"),
+                    ),
+                    Positioned(
+                      right: -16,
+                      bottom: 0,
+                      child: SizedBox(
+                        height: 46,
+                        width: 46,
+                        child: TextButton(
+                          style: TextButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(50),
+                              side: BorderSide(color: Colors.white),
+                            ),
+                            // primary: Colors.white,
+                            backgroundColor: Color(0xFFF5F6F9),
+                          ),
+                          onPressed: () {},
+                          child: Icon(
+                            Icons.camera_alt,
+                            size: 20,
+                            color: Color(0xFF432C81),
+                          ),
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              // Row(
+              //   mainAxisAlignment: MainAxisAlignment.center,
+              //   children: const [
+              //     Gap(20),
+              //     CircleAvatar(
+              //       radius: 50,
+              //       backgroundImage: AssetImage('assets/images/my_pic.jpg'),
+              //     ),
+              //     SizedBox(
+              //       height: 10,
+              //     ),
+              //     Icon(
+              //       Icons.edit,
+              //       size: 40,
+              //       color: Color(0xFF432C81),
+              //     ),
+              //   ],
+              // ),
               const Gap(10),
               const Text(
-                'Ibraheem Omowumi',
+                'Scientist',
                 style: TextStyle(
                     color: Color(0xFF432C81),
-                    fontSize: 30,
+                    fontSize: 35,
                     fontWeight: FontWeight.bold,
                     fontFamily: 'Raleway'),
-              ),
-              const Gap(5),
-              const Text(
-                'hibraheem160@gmail.com',
-                style:
-                    TextStyle(color: Color(0xFFA99Fc6), fontFamily: 'Raleway'),
-              ),
-              const Gap(30),
-              Column(
-                children: [
-                  const Divider(thickness: 1),
-                  ClientScreenWidget(icon: Icons.person, text: 'Account'),
-                  const Divider(thickness: 1.0),
-                  ClientScreenWidget(
-                      icon: Icons.event_note_sharp, text: 'Medical Record'),
-                  const Divider(thickness: 1),
-                  ClientScreenWidget(
-                      icon: Icons.notifications, text: 'Notification'),
-                  const Divider(thickness: 1),
-                  ClientScreenWidget(
-                      icon: Icons.remove_red_eye, text: 'Appearance'),
-                  const Divider(thickness: 1),
-                  ClientScreenWidget(
-                      icon: Icons.shield, text: 'Privacy and Security'),
-                  const Divider(thickness: 1),
-                  ClientScreenWidget(
-                      icon: FontAwesomeIcons.speakerDeck, text: 'Sound'),
-                  const Divider(thickness: 1),
-                  ClientScreenWidget(icon: Icons.language, text: 'Language'),
-                  const Divider(thickness: 1),
-                ],
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              const Text('Scientist'),
-              const SizedBox(
-                height: 10,
-              ),
-              const Text('hibraheem160@gmail.com'),
+              )
             ],
-          )
+          ),
+          const Gap(5),
+          const Text(
+            'hibraheem160@gmail.com',
+            style: TextStyle(
+                color: Color(0xFF7B6CA8), fontFamily: 'Raleway', fontSize: 15),
+          ),
+          const Gap(30),
+          Column(
+            children: [
+              const Divider(thickness: 1),
+              ClientScreenWidget(
+                  icon: Icons.person,
+                  text: 'Account',
+                  onpressed: () {
+                    print('Account details');
+                  }),
+              const Divider(thickness: 1.0),
+              ClientScreenWidget(
+                  icon: Icons.event_note_sharp, text: 'Medical Record'),
+              const Divider(thickness: 1),
+              ClientScreenWidget(
+                  icon: Icons.notifications, text: 'Notification'),
+              const Divider(thickness: 1),
+              ClientScreenWidget(
+                  icon: Icons.remove_red_eye, text: 'Appearance'),
+              const Divider(thickness: 1),
+              ClientScreenWidget(
+                  icon: Icons.shield, text: 'Privacy and Security'),
+              const Divider(thickness: 1),
+              ClientScreenWidget(
+                  icon: FontAwesomeIcons.speakerDeck, text: 'Sound'),
+              const Divider(thickness: 1),
+              ClientScreenWidget(icon: Icons.language, text: 'Language'),
+              const Divider(thickness: 1),
+            ],
+          ),
         ],
       ),
     );
