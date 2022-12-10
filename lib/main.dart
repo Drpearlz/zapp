@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
       // just edit the '/' in the initial route to any of the routes e.g '/login'
       // initialRoute: '/',
       // // This is the routes for the different screens so far
-      
+
       //home: BottomBar(),
       // home: const SplashScreen(),
     routes: {
