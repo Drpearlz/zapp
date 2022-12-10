@@ -36,7 +36,7 @@ const OnboardingScreenUtil(
       backgroundImg: 'assets/images/onboarding_4.png',
       onBoardMsgHeading: 'Access to Emergency Services',
       onBoardMsgBody:
-        'Connect easily with thousands of licensed\n\t\t\t\t\t\t\t\thealth professionals in your areas',
+        'Connect easily with thousands of licensed\n\t\t\t\thealth professionals in your areas',
       logoType: 'assets/images/logo_non_trans.png',
     ),
     const OnboardingScreenUtil(
@@ -44,6 +44,7 @@ const OnboardingScreenUtil(
       onBoardMsgHeading: 'Access Your Health Records',
       onBoardMsgBody:
         '    Get access and keep track of all your\n health reports and prescriptions, at your\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t fingertips',
+      nextMsg: '',
       buttonText: 'Get Started',
     ),
 
@@ -53,7 +54,7 @@ const OnboardingScreenUtil(
   void initState() {
     super.initState();
     Timer.periodic(Duration(seconds: 3), (Timer timer) {
-      if (currentIndex < 2) {
+      if (currentIndex < 4) {
         currentIndex++;
         pageController.animateToPage(
           currentIndex,
@@ -61,7 +62,7 @@ const OnboardingScreenUtil(
       curve: Curves.easeIn,
         );
       } else {
-        currentIndex = 2;
+        currentIndex = 4;
       }
     });
   }
