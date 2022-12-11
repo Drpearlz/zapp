@@ -13,8 +13,9 @@ class Menu extends StatelessWidget {
           mainAxisSize: MainAxisSize.max,
           children: [
             const ListTile(
+              horizontalTitleGap: 5.0,
               contentPadding: EdgeInsets.fromLTRB(15, 20, 15, 5),
-              leading: Icon(Icons.waving_hand),
+              leading: Icon(Icons.waving_hand, color: Colors.orangeAccent,),
               title: Text(
                 'Hi Peggy!',
                 style: TextStyle(
