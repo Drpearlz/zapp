@@ -3,6 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:zapp/constant.dart';
 import 'package:zapp/screens/intro/welcome_screen.dart';
 
+
 class OnboardingScreenUtil extends StatelessWidget {
   final String backgroundImg;
   final String onBoardMsgHeading;
@@ -90,7 +91,7 @@ class OnboardingScreenUtil extends StatelessWidget {
                 onTap: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(
-                      builder: (context) => const WelcomeScreen(),
+                      builder: (context) => const WelcomePage(),
                     ),
                   );
                 },
@@ -126,7 +127,9 @@ class OnboardingScreenUtil extends StatelessWidget {
                                   const BorderRadius.all(Radius.circular(20)),
                             ),
                           ),
-                          const SizedBox(width: 3,),
+                          const SizedBox(
+                            width: 3,
+                          ),
                           Container(
                             height: 5.0,
                             width: 22.0,
@@ -136,7 +139,9 @@ class OnboardingScreenUtil extends StatelessWidget {
                                   const BorderRadius.all(Radius.circular(20)),
                             ),
                           ),
-                          const SizedBox(width: 3,),
+                          const SizedBox(
+                            width: 3,
+                          ),
                           Container(
                             height: 5.0,
                             width: 22.0,
@@ -146,7 +151,9 @@ class OnboardingScreenUtil extends StatelessWidget {
                                   const BorderRadius.all(Radius.circular(20)),
                             ),
                           ),
-                          const SizedBox(width: 3,),
+                          const SizedBox(
+                            width: 3,
+                          ),
                           Container(
                             height: 5.0,
                             width: 22.0,
@@ -156,7 +163,9 @@ class OnboardingScreenUtil extends StatelessWidget {
                                   const BorderRadius.all(Radius.circular(20)),
                             ),
                           ),
-                          const SizedBox(width: 3,),
+                          const SizedBox(
+                            width: 3,
+                          ),
                           Container(
                             height: 5.0,
                             width: 22.0,
@@ -170,7 +179,12 @@ class OnboardingScreenUtil extends StatelessWidget {
                       ),
                     ),
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const WelcomePage()));
+                      },
                       style: TextButton.styleFrom(
                         backgroundColor: Colors.white,
                       ),
