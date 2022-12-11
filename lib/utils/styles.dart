@@ -11,6 +11,6 @@ class ButtomBarIcons {
 }
 
 // https://iconscout.com/icon/medical-equipment-3660633
-// i used iconscout for the bottom nav icons. You can check those, 
+// i used iconscout for the bottom nav icons. You can check those,
 // or find similar ones like the design in font awesome/material icons.
 // for instance, calendarMinus looks closely to the icon used in the design than just calendar

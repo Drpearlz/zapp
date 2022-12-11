@@ -17,14 +17,14 @@ class WelcomeScreen extends StatelessWidget {
             children: [
               SizedBox(
                   height: MediaQuery.of(context).size.height *
-                      0.3), //20% of the screen
+                      0.1), //20% of the screen
               LogoText(
-                size: 150,
+                size: 50,
                 showText: false,
               ),
               // HealthLogo(),
               const Text(
-                "Welcome to Jejelove Health !",
+                "Welcome to Jejelove Health",
                 style: TextStyle(
                   color: kPrimaryColor,
                   fontFamily: 'Righteous',
@@ -33,7 +33,7 @@ class WelcomeScreen extends StatelessWidget {
                 ),
               ),
               //const Spacer(),
-              const SizedBox(height: 15),
+              const SizedBox(height: 10),
               // Expanded()
               // Spacer(),
               const AspectRatio(aspectRatio: 3),
@@ -49,7 +49,7 @@ class WelcomeScreen extends StatelessWidget {
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20),
                           ),
-                          backgroundColor: kPrimaryColor,
+                          primary: kPrimaryColor,
                         ),
                         onPressed: () {
                           Navigator.of(context).push(

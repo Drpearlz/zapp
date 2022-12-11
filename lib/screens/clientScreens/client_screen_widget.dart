@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
 
 class ClientScreenWidget extends StatelessWidget {
-  final icon;
-  final text;
-  ClientScreenWidget({required this.icon, required this.text});
+  final IconData icon;
+  final String text;
+  final Function()? onpressed;
+  const ClientScreenWidget(
+      {Key? key, required this.icon, required this.text, this.onpressed})
+      : super(key: key);
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        print('$text details Checked');
-      },
+      onTap: onpressed,
       child: Row(
         children: [
           Icon(
