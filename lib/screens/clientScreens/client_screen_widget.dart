@@ -17,7 +17,7 @@ class ClientScreenWidget extends StatelessWidget {
             icon,
             color: const Color(0xFF7B6CA8),
           ),
-          const Gap(10),
+          // const Gap(10),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Text(

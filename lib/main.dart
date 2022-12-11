@@ -4,10 +4,11 @@ import 'package:zapp/screens/intro/onboarding.dart';
 import 'package:zapp/screens/intro/welcome_screen.dart';
 import 'package:zapp/screens/login/login_screen.dart';
 import 'package:zapp/screens/sign_up/sign_up.dart';
-import 'package:zapp/screens/splash.dart';
-import 'package:zapp/screens/menu/menu.dart';
+import 'package:zapp/screens/specialities/specialities_screen.dart';
+import 'package:zapp/splash.dart';
+import 'package:zapp/utils/health_logo.dart';
 
-import 'utils/bottombar.dart';
+import 'utils/bottom_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -35,7 +36,8 @@ class MyApp extends StatelessWidget {
       //   '/onboarding': (context) => const OnboardingPage(),
       //   '/login': (context) => const LoginScreen(),
       // },
-      home: Menu(),
+      home: BottomBar(),
     );
   }
 }
+// SpecialitiesScreen()
