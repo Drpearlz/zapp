@@ -1,112 +1,123 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
-import 'package:zapp/screens/sign_up/sign_up.dart';
-import 'package:zapp/utils/health_logo.dart';
-import 'package:zapp/utils/logo_text.dart';
-import '../../constant.dart';
+import 'package:flutter/src/widgets/container.dart';
+import 'package:flutter/src/widgets/framework.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:zapp/constant.dart';
 
-class WelcomeScreen extends StatelessWidget {
-  const WelcomeScreen({super.key});
+import '../login/login_screen.dart';
+import '../sign_up/sign_up.dart';
 
+class WelcomePage extends StatefulWidget {
+  const WelcomePage({super.key});
+
+  @override
+  State<WelcomePage> createState() => _WelcomePageState();
+}
+
+class _WelcomePageState extends State<WelcomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: SingleChildScrollView(
-          child: Column(
-            // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              SizedBox(
-                  height: MediaQuery.of(context).size.height *
-                      0.1), //20% of the screen
-              LogoText(
-                size: 50,
-                showText: false,
-              ),
-              // HealthLogo(),
-              const Text(
-                "Welcome to Jejelove Health",
-                style: TextStyle(
-                  color: kPrimaryColor,
-                  fontFamily: 'Righteous',
-                  fontWeight: FontWeight.w400,
-                  fontSize: 25.0,
-                ),
-              ),
-              //const Spacer(),
-              const SizedBox(height: 10),
-              // Expanded()
-              // Spacer(),
-              const AspectRatio(aspectRatio: 3),
-              Column(
+              SizedBox(height: 150),
+              // Logo
+              Stack(
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 50),
-                    child: SizedBox(
-                      width: double.infinity,
-                      height: 50,
-                      child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20),
-                          ),
-                          primary: kPrimaryColor,
-                        ),
-                        onPressed: () {
-                          Navigator.of(context).push(
-                            MaterialPageRoute(
-                              builder: (context) => const SignUpScreen(),
-                            ),
-                          );
-                        },
-                        child: const Text(
-                          "Create Account",
-                          style: TextStyle(
-                            fontFamily: 'SourceSansPro',
-                            fontSize: 18.0,
-                          ),
-                        ),
-                      ),
+                  Center(child: Image.asset('assets/logo/flaked-logo.png')),
+                  SizedBox(height: 5),
+                  Positioned(
+                    left: 145,
+                    bottom: 30,
+                    child: Text(
+                      'Jejelove Health',
+                      style: GoogleFonts.righteous(
+                          fontWeight: FontWeight.w400,
+                          fontSize: 16,
+                          color: mainPurple),
                     ),
                   ),
-                  const SizedBox(height: 15),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 50),
-                    child: SizedBox(
-                      width: double.infinity,
-                      height: 50,
-                      child: GestureDetector(
-                        onTap: () {
-                          Navigator.of(context).pushNamed('/login');
-                        },
-                        child: Container(
-                          decoration: BoxDecoration(
-                            border: Border.all(
-                              color: kPrimaryColor,
-                            ),
-                            borderRadius: const BorderRadius.all(
-                              Radius.circular(50.0),
-                            ),
-                          ),
-                          child: const Center(
-                            child: Text(
-                              'Sign In',
-                              style: TextStyle(
-                                color: kPrimaryColor,
-                                fontFamily: 'SourceSansPro',
-                                fontSize: 18.0,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: 20),
                 ],
               ),
-            ],
-          ),
-        ),
+              SizedBox(height: 155),
+
+              // Welcome to Jejelove Health!
+              Text(
+                'Welcome to Jejelove Health!',
+                style: GoogleFonts.righteous(
+                    fontWeight: FontWeight.w400,
+                    fontSize: 24,
+                    color: mainPurple),
+              ),
+              SizedBox(height: 105.1),
+
+              // Buttons
+              Column(
+                children: [
+                  // Create account button
+                  GestureDetector(
+                    onTap: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => SignUpScreen(),
+                        )),
+                    child: Container(
+                      width: 366,
+                      height: 52.97,
+                      decoration: BoxDecoration(
+                          color: kPrimaryColor,
+                          borderRadius: BorderRadius.circular(30.82)),
+                      child: Center(
+                        child: Text(
+                          'Create Account',
+                          style: TextStyle(
+                              fontFamily: 'Source Sans Pro',
+                              color: white,
+                              fontSize: 17.34,
+                              fontWeight: FontWeight.w600),
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 25.03),
+
+                  //Sign in button
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 58.0),
+                    child: GestureDetector(
+                      onTap: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => LoginScreen(),
+                          )),
+                      child: Container(
+                        width: 366,
+                        height: 52.97,
+                        decoration: BoxDecoration(
+                            border: Border.all(
+                              color: mainPurple,
+                            ),
+                            borderRadius: BorderRadius.circular(30.82)),
+                        child: Center(
+                          child: Text(
+                            'Sign In',
+                            style: TextStyle(
+                                fontFamily: 'Source Sans Pro',
+                                color: mainPurple,
+                                fontSize: 17.34,
+                                fontWeight: FontWeight.w600),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              )
+            ]),
       ),
     );
   }
