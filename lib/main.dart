@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, unused_import
 
 import 'package:flutter/material.dart';
+import 'package:zapp/screens/chat_screen/chat_screen.dart';
 import 'package:zapp/screens/clientScreens/client_screen.dart';
 import 'package:zapp/screens/intro/welcome_screen.dart';
 import 'package:zapp/screens/login/login_screen.dart';
@@ -40,6 +41,11 @@ class MyApp extends StatelessWidget {
       // home: const SplashScreen(),
     routes: {
         '/': (context) => const SplashScreen(),
+        '/sign_up': (context) => const SignUpScreen(),
+        '/onboarding': (context) => const OnboardingScreen(),
+        '/bottombar':(context) => const BottomBar(),
+        '/login': (context) => const LoginScreen(),
+        '/chat': (context) => const ChatScreen(),
         //'/sign_up': (context) => const SignUpScreen(),
         //'/welcome': (context) => const WelcomeScreen(),
         //'/onboarding': (context) => const OnboardingScreen(),
