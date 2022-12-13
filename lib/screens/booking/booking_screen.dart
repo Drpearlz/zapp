@@ -18,7 +18,7 @@ class BookingScreen extends StatelessWidget {
                         Navigator.pop(context);
                       },
                       icon: const Icon(Icons.arrow_back_ios)),
-                  Text('Booking'),
+                  const Text('Booking'),
                 ],
               ),
             )

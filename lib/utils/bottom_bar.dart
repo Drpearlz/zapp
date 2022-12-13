@@ -10,6 +10,8 @@ import 'package:zapp/utils/health_logo.dart';
 import 'package:zapp/utils/styles.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
+import 'custom_bottom_nav.dart';
+
 class BottomBar extends StatefulWidget {
   const BottomBar({Key? key}) : super(key: key);
 
@@ -31,7 +33,18 @@ class _BottomBarState extends State<BottomBar> {
 
   @override
   Widget build(BuildContext context) {
-    final List<Widget> _widgetOptions = [
+    List<PersistentBottomNavBarItem> persistentNavItems = [
+      /*PersistentBottomNavBarItem(
+        icon: ButtomBarIcons.homeIcon,
+        title: '',
+      ),*/
+      PersistentBottomNavBarItem(icon: ButtomBarIcons.messageIcon, title: ''),
+      PersistentBottomNavBarItem(
+          icon: ButtomBarIcons.stethoscopeIcon, title: ''),
+      PersistentBottomNavBarItem(icon: ButtomBarIcons.recordIcon, title: ''),
+      PersistentBottomNavBarItem(icon: const Icon(Icons.person), title: ''),
+    ];
+    final List<Widget> widgetOptions = [
       const SignUpScreen(),
       const HealthLogo(),
       //const LoginScreen(),
@@ -39,15 +52,44 @@ class _BottomBarState extends State<BottomBar> {
       const BookingScreen(),
       const ClientScreen(),
     ];
-    void _onItemTapped(int index) {
-      setState(() {
-        _selectedindex = index;
-      });
-    }
 
     return Scaffold(
       // backgroundColor: const Color(0xFF7B6CA8),
-      body: Center(
+      body: widgetOptions[_selectedindex],
+      bottomNavigationBar: BottomIndicatorBar(
+        currentIndex: _selectedindex,
+        onTap: (index) {
+          setState(() {
+            _selectedindex = index;
+          });
+        },
+        items: bottomNavItems,
+        activeColor: const Color(0xFF7B6CA8),
+        inactiveColor: Colors.black,
+        indicatorColor: const Color(0xFF7B6CA8),
+      ),
+    );
+  }
+
+  List<BottomIndicatorNavigationBarItem> bottomNavItems = [
+    BottomIndicatorNavigationBarItem(
+      icon: ButtomBarIcons.homeIcon.icon!,
+    ),
+    BottomIndicatorNavigationBarItem(
+      icon: ButtomBarIcons.messageIcon.icon!,
+    ),
+    BottomIndicatorNavigationBarItem(
+      icon: ButtomBarIcons.stethoscopeIcon.icon!,
+    ),
+    BottomIndicatorNavigationBarItem(
+      icon: ButtomBarIcons.recordIcon.icon!,
+    ),
+    BottomIndicatorNavigationBarItem(
+      icon: Icons.person,
+    ),
+  ];
+}
+/* body: Center(
         child: _widgetOptions[_selectedindex],
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -60,44 +102,4 @@ class _BottomBarState extends State<BottomBar> {
         type: BottomNavigationBarType.fixed,
         items: bottomNavItems,
       ),
-    );
-  }
-
-  List<BottomNavigationBarItem> bottomNavItems = [
-    BottomNavigationBarItem(
-      icon: ButtomBarIcons.homeIcon,
-      label: '',
-    ),
-    BottomNavigationBarItem(icon: ButtomBarIcons.messageIcon, label: ''),
-    BottomNavigationBarItem(icon: ButtomBarIcons.stethoscopeIcon, label: ''),
-    BottomNavigationBarItem(icon: ButtomBarIcons.recordIcon, label: ''),
-    const BottomNavigationBarItem(icon: Icon(Icons.person), label: ''),
-  ];
-}
-
-/* body: PersistentTabView(
-        context,
-        controller: _controller,
-        navBarStyle: NavBarStyle.style3,
-        screens: [
-          const SignUpScreen(),
-          const LoginScreen(),
-          SpecialitiesScreen(),
-          const WelcomeScreen(),
-          const ClientScreen(),
-          // _widgetOptions[_selectedindex],
-        ],
-        items: persistentNavItems,
-      ),*/
-
-/*List<PersistentBottomNavBarItem> persistentNavItems = [
-    PersistentBottomNavBarItem(
-      icon: ButtomBarIcons.homeIcon,
-      title: '',
-    ),
-    PersistentBottomNavBarItem(icon: ButtomBarIcons.messageIcon, title: ''),
-    PersistentBottomNavBarItem(icon: ButtomBarIcons.stethoscopeIcon, title: ''),
-    PersistentBottomNavBarItem(icon: ButtomBarIcons.recordIcon, title: ''),
-    PersistentBottomNavBarItem(icon: const Icon(Icons.person), title: ''),
-  ];
-}*/
+    );*/

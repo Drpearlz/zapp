@@ -17,7 +17,7 @@ class SignUpScreen extends StatelessWidget {
             // mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               const SizedBox(height: 50),
-              LogoText(size: 100),
+              LogoText(size: 50),
               const SizedBox(height: 50),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 30),
@@ -47,11 +47,11 @@ class SignUpScreen extends StatelessWidget {
                         ),
                         const SizedBox(height: 30),
                         Padding(
-                          padding: const EdgeInsets.only(left: 50, right: 50),
+                          padding: const EdgeInsets.only(left: 25, right: 25),
                           child: TextFormField(
                             decoration: const InputDecoration(
                               labelStyle: TextStyle(color: kPrimaryColor),
-                              hintText: "Enter your Email Address",
+                              hintText: "Enter Email Address",
                               floatingLabelBehavior:
                                   FloatingLabelBehavior.always,
                               suffixIcon: Icon(Icons.mail),
@@ -60,8 +60,9 @@ class SignUpScreen extends StatelessWidget {
                         ),
                         const SizedBox(height: 10),
                         Padding(
-                          padding: const EdgeInsets.only(left: 50, right: 50),
+                          padding: const EdgeInsets.only(left: 25, right: 25),
                           child: TextFormField(
+                            obscureText: true,
                             decoration: const InputDecoration(
                               labelStyle: TextStyle(color: kPrimaryColor),
                               hintText: "Enter your password",
@@ -73,20 +74,21 @@ class SignUpScreen extends StatelessWidget {
                         ),
                         const SizedBox(height: 10),
                         Padding(
-                          padding: const EdgeInsets.only(left: 50, right: 50),
+                          padding: const EdgeInsets.only(left: 25, right: 25),
                           child: TextFormField(
+                            obscureText: true,
                             decoration: const InputDecoration(
                               labelStyle: TextStyle(color: kPrimaryColor),
-                              hintText: "Enter your password",
+                              hintText: "Confirm password",
                               floatingLabelBehavior:
                                   FloatingLabelBehavior.always,
                               suffixIcon: Icon(Icons.remove_red_eye),
                             ),
                           ),
                         ),
-                        const SizedBox(height: 80),
+                        const SizedBox(height: 50),
                         Padding(
-                          padding: const EdgeInsets.only(left: 50, right: 50),
+                          padding: const EdgeInsets.only(left: 25, right: 25),
                           child: SizedBox(
                             width: double.infinity,
                             height: 50,
@@ -110,7 +112,7 @@ class SignUpScreen extends StatelessWidget {
                         ),
                         const SizedBox(height: 20),
                         const Text(
-                          "or continue with social media",
+                          "Continue with social media",
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             color: Colors.black,
@@ -147,7 +149,7 @@ class SignUpScreen extends StatelessWidget {
                           child: const Center(
                             child: Text.rich(
                               TextSpan(
-                                text: "Are you a heath worker ? ",
+                                text: "Are you a health worker ? ",
                                 style: TextStyle(
                                   color: white,
                                   fontSize: 20,

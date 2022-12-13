@@ -20,12 +20,12 @@ class ChatTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical: 10),
-          child: Column(
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Column(
             children: [
               Row(
                 children: [
@@ -81,27 +81,27 @@ class ChatTile extends StatelessWidget {
               ),
             ],
           ),
-        ),
-        Column(
-          children: [
-            Text(time),
-            const SizedBox(
-              height: 5,
-            ),
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(2),
-                color: const Color(0xFF635BEB),
+          Column(
+            children: [
+              Text(time),
+              const SizedBox(
+                height: 5,
               ),
-              child: Text(
-                "$messageAmount",
-                style: const TextStyle(fontSize: 14, color: Colors.white),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(2),
+                  color: const Color(0xFF635BEB),
+                ),
+                child: Text(
+                  "$messageAmount",
+                  style: const TextStyle(fontSize: 14, color: Colors.white),
+                ),
               ),
-            ),
-          ],
-        ),
-      ],
+            ],
+          ),
+        ],
+      ),
     );
   }
 }
