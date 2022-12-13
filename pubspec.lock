@@ -136,7 +136,7 @@ packages:
       name: google_maps_flutter
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.2.1"
+    version: "2.2.2"
   google_maps_flutter_android:
     dependency: transitive
     description:
@@ -283,11 +283,7 @@ packages:
       name: petitparser
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< Updated upstream
     version: "5.1.0"
-=======
-    version: "5.0.0"
->>>>>>> Stashed changes
   platform:
     dependency: transitive
     description:
