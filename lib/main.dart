@@ -39,8 +39,8 @@ class MyApp extends StatelessWidget {
       //home: BottomBar(),
       // home: const SplashScreen(),
       routes: {
-        '/': (context) => BookingScreen(),
-        // '/': (context) => const SplashScreen(),
+        // '/': (context) => BookingScreen(),
+        '/': (context) => const SplashScreen(),
         //'/sign_up': (context) => const SignUpScreen(),
         //'/welcome': (context) => const WelcomeScreen(),
         //'/onboarding': (context) => const OnboardingScreen(),

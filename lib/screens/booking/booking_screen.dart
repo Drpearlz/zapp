@@ -24,7 +24,7 @@ class BookingScreen extends StatelessWidget {
                   children: [
                     IconButton(
                       onPressed: () {
-                        Navigator.pushNamed(context, '/');
+                        // Navigator.pushNamed(context, '/');
                       },
                       icon: const Icon(
                         Icons.arrow_back,

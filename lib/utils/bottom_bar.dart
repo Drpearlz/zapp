@@ -51,7 +51,6 @@ class _BottomBarState extends State<BottomBar> {
       //const LoginScreen(),
       SpecialitiesScreen(),
       const BookingScreen(),
-      // const BookingScreenTwo(),
       const ClientScreen(),
     ];
 
