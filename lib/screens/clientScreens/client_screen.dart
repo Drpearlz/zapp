@@ -39,7 +39,7 @@ class ClientScreen extends StatelessWidget {
                     onPressed: () => 'profile edited',
                     icon: const Icon(
                       Icons.edit,
-                      size: 40,
+                      size: 30,
                       color: Color(0xFF432C81),
                     ),
                   ),

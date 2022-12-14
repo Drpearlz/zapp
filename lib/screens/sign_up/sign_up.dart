@@ -25,7 +25,7 @@ class SignUpScreen extends StatelessWidget {
                   // padding:                      const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
                   // padding: const EdgeInsets.only(top: 20, left: 50, right: 50),
                   decoration: const BoxDecoration(
-                    color: lightGray,
+                    color: white,
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(20),
                       topRight: Radius.circular(20),

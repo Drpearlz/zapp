@@ -20,13 +20,13 @@
               android:name="io.flutter.embedding.android.NormalTheme"
               android:resource="@style/NormalTheme"
               />
-            <meta-data android:name="com.google.android.geo.API_KEY"
-                android:value="AIzaSyA5HaaprWEJM_e64F9PSSXB6UvyHGgiFiU"/>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+       <meta-data android:name="com.google.android.geo.API_KEY"
+           android:value="AIzaSyA5HaaprWEJM_e64F9PSSXB6UvyHGgiFiU"/>
         <!-- Don't delete the meta-data below.
              This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
         <meta-data

@@ -4,10 +4,8 @@ import 'package:flutter/material.dart';
 //Constants variables for colors of zuri flutter devs
 const kPrimaryColor = Color(0xFF635BEB);
 const Color logoRed = Color(0xFFD90000);
-const Color logoBlue = Color(0xFF0063DB);
-const Color lightGray = Color(0xFFF1F1F1);
-const Color black = Colors.black;
-const Color white = Colors.white;
+const Color black = Color(0xFF222B45);
+const Color white = Color(0xFFF1F1F1);
 // const Color lightGray = Color(0xFF3B3B3B);
 
 const Color mainPurple = Color(0xFF635BEB);
