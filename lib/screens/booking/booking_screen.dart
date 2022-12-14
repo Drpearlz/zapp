@@ -4,6 +4,7 @@ import 'package:zapp/screens/booking/booking_screens/booking_screen1.dart';
 import 'package:zapp/screens/booking/booking_screens/booking_screen3.dart';
 
 import 'booking_screens/booking_screen2.dart';
+import 'booking_screens/booking-confirmed_screen.dart';
 
 class BookingScreen extends StatelessWidget {
   const BookingScreen({super.key});
@@ -41,7 +42,12 @@ class BookingScreen extends StatelessWidget {
                     ),
                     const Gap(130),
                     IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => const BookingConfirmedScreen()),
+                        );
+                      },
                       icon: const Icon(
                         Icons.location_on_outlined,
                         // color: Color(0xFF432C81),
