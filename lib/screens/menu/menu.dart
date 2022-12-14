@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zapp/constant.dart';
+import 'menu_card.dart';
 
 class Menu extends StatelessWidget {
   const Menu({Key? key}) : super(key: key);
@@ -15,7 +16,10 @@ class Menu extends StatelessWidget {
             const ListTile(
               horizontalTitleGap: 5.0,
               contentPadding: EdgeInsets.fromLTRB(15, 20, 15, 5),
-              leading: Icon(Icons.waving_hand, color: Colors.orangeAccent,),
+              leading: Icon(
+                Icons.waving_hand,
+                color: Colors.orangeAccent,
+              ),
               title: Text(
                 'Hi Peggy!',
                 style: TextStyle(
@@ -36,133 +40,43 @@ class Menu extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   mainAxisSize: MainAxisSize.max,
-                  children: [
-                    Card(
-                      shape: cardShape,
-                      color: cardColor,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                          const Text(
-                            'Your Diet Chart',
-                            style: TextStyle(
-                                color: deepPurple,
-                                fontSize: menuTextSize,
-                                fontFamily: menuFontFamily,
-                                fontWeight: menuFontWeight),
-                          ),
-                          Container(
-                            margin: const EdgeInsets.all(8.0),
-                            child: const Image(
-                                image: AssetImage(
-                                    'assets/images/menu/Lifesavers Stomach.png')),
-                          )
-                        ],
-                      ),
+                  children: const [
+                    MenuCard(
+                      menuCardText: 'Your Diet Chart',
+                      menuCardImage: AssetImage(
+                          'assets/images/menu/Lifesavers Stomach.png'),
                     ),
-                    const SizedBox(
+                    SizedBox(
                       height: 10.0,
                     ),
-                    Card(
-                      shape: cardShape,
-                      color: cardColor,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                          const Text(
-                            'Medical History',
-                            style: TextStyle(
-                                color: deepPurple,
-                                fontSize: menuTextSize,
-                                fontFamily: menuFontFamily,
-                                fontWeight: menuFontWeight),
-                          ),
-                          Container(
-                            margin: const EdgeInsets.all(8.0),
-                            child: const Image(
-                                image: AssetImage(
-                                    'assets/images/menu/Lifesavers Electrocardiogram.png')),
-                          )
-                        ],
-                      ),
+                    MenuCard(
+                      menuCardText: 'Medical History',
+                      menuCardImage: AssetImage(
+                          'assets/images/menu/Lifesavers Electrocardiogram.png'),
                     ),
-                    const SizedBox(
+                    SizedBox(
                       height: 10.0,
                     ),
-                    Card(
-                      shape: cardShape,
-                      color: cardColor,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                          const Text(
-                            'Lab Results',
-                            style: TextStyle(
-                                color: deepPurple,
-                                fontSize: menuTextSize,
-                                fontFamily: menuFontFamily,
-                                fontWeight: menuFontWeight),
-                          ),
-                          Container(
-                            margin: const EdgeInsets.all(8.0),
-                            child: const Image(
-                                image: AssetImage(
-                                    'assets/images/menu/Lifesavers Serum Bag.png')),
-                          )
-                        ],
-                      ),
+                    MenuCard(
+                      menuCardText: 'Lab Results',
+                      menuCardImage: AssetImage(
+                          'assets/images/menu/Lifesavers Serum Bag.png'),
                     ),
-                    const SizedBox(
+                    SizedBox(
                       height: 10.0,
                     ),
-                    Card(
-                      shape: cardShape,
-                      color: cardColor,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                          const Text(
-                            'Online Chart',
-                            style: TextStyle(
-                                color: deepPurple,
-                                fontSize: menuTextSize,
-                                fontFamily: menuFontFamily,
-                                fontWeight: menuFontWeight),
-                          ),
-                          Container(
-                            margin: const EdgeInsets.all(8.0),
-                            child: const Image(
-                                image: AssetImage(
-                                    'assets/images/menu/Lifesavers Bust.png')),
-                          )
-                        ],
-                      ),
+                    MenuCard(
+                      menuCardText: 'Online Chart',
+                      menuCardImage:
+                          AssetImage('assets/images/menu/Lifesavers Bust.png'),
                     ),
-                    const SizedBox(
+                    SizedBox(
                       height: 10.0,
                     ),
-                    Card(
-                      shape: cardShape,
-                      color: cardColor,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                          const Text(
-                            'Finding a Doctor',
-                            style: TextStyle(
-                                color: deepPurple,
-                                fontSize: menuTextSize,
-                                fontFamily: menuFontFamily,
-                                fontWeight: menuFontWeight),
-                          ),
-                          Container(
-                            margin: const EdgeInsets.all(8.0),
-                            child: const Image(
-                                image: AssetImage(
-                                    'assets/images/menu/Lifesavers Stethoscope.png')),
-                          )
-                        ],
-                      ),
+                    MenuCard(
+                      menuCardText: 'Finding a Doctor',
+                      menuCardImage: AssetImage(
+                          'assets/images/menu/Lifesavers Stethoscope.png'),
                     ),
                   ],
                 ),
@@ -171,7 +85,6 @@ class Menu extends StatelessWidget {
           ],
         ),
       ),
-
     );
   }
 }
