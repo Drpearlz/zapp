@@ -5,7 +5,7 @@ import 'package:zapp/screens/clientScreens/client_screen.dart';
 import 'package:zapp/screens/finder/finder_screen.dart';
 import 'package:zapp/screens/intro/welcome_screen.dart';
 import 'package:zapp/screens/login/login_screen.dart';
-import 'package:zapp/screens/sign_up/sign_up.dart';
+import 'package:zapp/screens/sign_up/sign_up_1.dart';
 import 'package:zapp/screens/specialities/specialities_screen.dart';
 import 'package:zapp/utils/health_logo.dart';
 import 'package:zapp/utils/styles.dart';

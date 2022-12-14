@@ -5,7 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:zapp/constant.dart';
 
 import '../login/login_screen.dart';
-import '../sign_up/sign_up.dart';
+import '../sign_up/sign_up_1.dart';
 
 class WelcomePage extends StatefulWidget {
   const WelcomePage({super.key});
@@ -62,7 +62,7 @@ class _WelcomePageState extends State<WelcomePage> {
                       onTap: () => Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => SignUpScreen(),
+                            builder: (context) => SignUpScreen1(),
                           )),
                       child: Container(
                         width: 366,

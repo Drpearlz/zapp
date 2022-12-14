@@ -6,7 +6,8 @@ import 'package:zapp/screens/clientScreens/client_screen.dart';
 import 'package:zapp/screens/finder/finder_screen.dart';
 import 'package:zapp/screens/intro/welcome_screen.dart';
 import 'package:zapp/screens/login/login_screen.dart';
-import 'package:zapp/screens/sign_up/sign_up.dart';
+import 'package:zapp/screens/sign_up/sign_up_1.dart';
+import 'package:zapp/screens/sign_up/sign_up_2.dart';
 import 'package:zapp/screens/specialities/specialities_screen.dart';
 import 'package:zapp/screens/intro/onboarding_screen.dart';
 import 'package:zapp/splash.dart';
@@ -41,7 +42,8 @@ class MyApp extends StatelessWidget {
       // home: const SplashScreen(),
       routes: {
         '/': (context) => const SplashScreen(),
-        //'/sign_up': (context) => const SignUpScreen(),
+        //'/sign_up1': (context) => const SignUpScreen1(),
+        //'/sign_up2': (context) => const SignUpScreen2(),
         //'/welcome': (context) => const WelcomeScreen(),
         //'/onboarding': (context) => const OnboardingScreen(),
         //'/bottombar':(context) => const BottomBar(),
@@ -52,6 +54,7 @@ class MyApp extends StatelessWidget {
         // '/': (context) => BookingScreen(),
       },
       //home: DSplash2Page(),
+      // home: SignUpScreen2(),
     );
   }
 }

@@ -5,8 +5,8 @@ import 'package:zapp/widgets/no_account_text.dart';
 import 'package:zapp/widgets/social_cards.dart';
 import '../../constant.dart';
 
-class SignUpScreen extends StatelessWidget {
-  const SignUpScreen({super.key});
+class SignUpScreen1 extends StatelessWidget {
+  const SignUpScreen1({super.key});
 
   @override
   Widget build(BuildContext context) {
