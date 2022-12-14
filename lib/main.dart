@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:zapp/screens/booking/booking_screen.dart';
 import 'package:zapp/screens/clientScreens/client_screen.dart';
+import 'package:zapp/screens/finder/finder_screen.dart';
 import 'package:zapp/screens/intro/welcome_screen.dart';
 import 'package:zapp/screens/login/login_screen.dart';
 import 'package:zapp/screens/sign_up/sign_up.dart';
@@ -41,14 +42,15 @@ class MyApp extends StatelessWidget {
       routes: {
         // '/': (context) => BookingScreen(),
         '/': (context) => const SplashScreen(),
-        //'/sign_up': (context) => const SignUpScreen(),
-        //'/welcome': (context) => const WelcomeScreen(),
-        //'/onboarding': (context) => const OnboardingScreen(),
-        //'/bottombar':(context) => const BottomBar(),
-        //'/login': (context) => const LoginScreen(),
-        //'/booking': (context) => const BookingScreen(),
-        //'/client': (context) => const ClientScreen(),
-        //'/map_screen': (context) => const Map_Screen()
+        '/sign_up': (context) => const SignUpScreen(),
+        '/welcome': (context) => const WelcomePage(),
+        '/onboarding': (context) => const OnboardingScreen(),
+        '/bottombar':(context) => const BottomBar(),
+        '/login': (context) => const LoginScreen(),
+        '/booking': (context) => const BookingScreen(),
+        '/client': (context) => const ClientScreen(),
+        '/map_screen': (context) => const Map_Screen(),
+        '/finder_screen':(context) => const FinderScreen()
       },
       //home: DSplash2Page(),
     );
