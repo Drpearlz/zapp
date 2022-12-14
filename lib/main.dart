@@ -38,8 +38,8 @@ class MyApp extends StatelessWidget {
 
       //home: BottomBar(),
       // home: const SplashScreen(),
-    routes: {
-        '/': (context) => const SplashScreen(),
+      routes: {
+        '/': (context) => const Map_Screen(),
         //'/sign_up': (context) => const SignUpScreen(),
         //'/welcome': (context) => const WelcomeScreen(),
         //'/onboarding': (context) => const OnboardingScreen(),
@@ -49,7 +49,8 @@ class MyApp extends StatelessWidget {
         //'/client': (context) => const ClientScreen(),
         //'/map_screen': (context) => const Map_Screen()
       },
-    //home: DSplash2Page(),
-);
-  }}
+      //home: DSplash2Page(),
+    );
+  }
+}
 // SpecialitiesScreen()

@@ -283,11 +283,7 @@ packages:
       name: petitparser
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< Updated upstream
     version: "5.1.0"
-=======
-    version: "5.0.0"
->>>>>>> Stashed changes
   platform:
     dependency: transitive
     description:
