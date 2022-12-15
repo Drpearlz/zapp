@@ -35,20 +35,18 @@ class MyApp extends StatelessWidget {
       // initialRoute: '/',
       // This is the routes for the different screens so far
 
-      //home: BottomBar(),
-      // home: const SplashScreen(),
-      routes: {
-        '/': (context) => const SplashScreen(),
-        '/sign_up': (context) => const SignUpScreen1(),
-        '/welcome': (context) => const WelcomePage(),
-        '/onboarding': (context) => const OnboardingScreen(),
-        '/bottombar': (context) => const BottomBar(),
-        '/login': (context) => const LoginScreen(),
-        '/booking': (context) => const BookingScreen(),
-        '/client': (context) => const ClientScreen(),
-      },
-
-      // home: ChatScreen(),
+      home: const ChatScreen(),
+      // routes: {
+      //   '/': (context) => const SplashScreen(),
+      //   '/sign_up': (context) => const SignUpScreen1(),
+      //   '/welcome': (context) => const WelcomePage(),
+      //   '/onboarding': (context) => const OnboardingScreen(),
+      //   '/bottombar': (context) => const BottomBar(),
+      //   '/login': (context) => const LoginScreen(),
+      //   '/booking': (context) => const BookingScreen(),
+      //   '/client': (context) => const ClientScreen(),
+      // },
+      // home: MyHomePage(),
     );
   }
 }
