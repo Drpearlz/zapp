@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
       // initialRoute: '/',
       // This is the routes for the different screens so far
 
-      home: const ChatScreen(),
+      home: const SplashScreen(),
       // routes: {
       //   '/': (context) => const SplashScreen(),
       //   '/sign_up': (context) => const SignUpScreen1(),
