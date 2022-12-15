@@ -35,24 +35,28 @@ class _BottomBarState extends State<BottomBar> {
 
   @override
   Widget build(BuildContext context) {
-    List<PersistentBottomNavBarItem> persistentNavItems = [
-      /*PersistentBottomNavBarItem(
-        icon: ButtomBarIcons.homeIcon,
-        title: '',
-      ),*/
-      PersistentBottomNavBarItem(icon: ButtomBarIcons.messageIcon, title: ''),
-      PersistentBottomNavBarItem(
-          icon: ButtomBarIcons.stethoscopeIcon, title: ''),
-      PersistentBottomNavBarItem(icon: ButtomBarIcons.recordIcon, title: ''),
-      PersistentBottomNavBarItem(icon: const Icon(Icons.person), title: ''),
+    List<BottomIndicatorNavigationBarItem> bottomNavItems = [
+      BottomIndicatorNavigationBarItem(
+        icon: ButtomBarIcons.homeIcon.icon!,
+      ),
+      BottomIndicatorNavigationBarItem(
+        icon: ButtomBarIcons.messageIcon.icon!,
+      ),
+      BottomIndicatorNavigationBarItem(
+        icon: ButtomBarIcons.stethoscopeIcon.icon!,
+      ),
+      BottomIndicatorNavigationBarItem(
+        icon: ButtomBarIcons.recordIcon.icon!,
+      ),
+      BottomIndicatorNavigationBarItem(
+        icon: Icons.person,
+      ),
     ];
     final List<Widget> widgetOptions = [
       SpecialitiesScreen(),
       const ChatScreen(),
-
       const FinderScreen(),
       const HealthLogo(),
-      //const LoginScreen(),
       const ClientScreen(),
     ];
 
@@ -73,24 +77,6 @@ class _BottomBarState extends State<BottomBar> {
       ),
     );
   }
-
-  List<BottomIndicatorNavigationBarItem> bottomNavItems = [
-    BottomIndicatorNavigationBarItem(
-      icon: ButtomBarIcons.homeIcon.icon!,
-    ),
-    BottomIndicatorNavigationBarItem(
-      icon: ButtomBarIcons.messageIcon.icon!,
-    ),
-    BottomIndicatorNavigationBarItem(
-      icon: ButtomBarIcons.stethoscopeIcon.icon!,
-    ),
-    BottomIndicatorNavigationBarItem(
-      icon: ButtomBarIcons.recordIcon.icon!,
-    ),
-    BottomIndicatorNavigationBarItem(
-      icon: Icons.person,
-    ),
-  ];
 }
 /* body: Center(
         child: _widgetOptions[_selectedindex],
