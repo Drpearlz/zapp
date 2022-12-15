@@ -40,12 +40,14 @@ class BookingScreen extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                           fontFamily: 'SourceSansPro'),
                     ),
-                    const Gap(130),
+                    const Gap(140),
                     IconButton(
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => const BookingConfirmedScreen()),
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  const BookingConfirmedScreen()),
                         );
                       },
                       icon: const Icon(
@@ -57,11 +59,13 @@ class BookingScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              const Gap(35),
+              const Gap(25),
               SizedBox(
                 height: 30,
                 child: TabBar(
-                  labelColor: const Color(0xFF432C81),
+                  labelColor: const Color(0xFF625be9),
+                  indicatorColor: const Color(0xFF625be9),
+                  indicatorWeight: 4,
                   unselectedLabelColor: Colors.grey[700],
                   tabs: const [
                     Tab(
