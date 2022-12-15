@@ -5,12 +5,13 @@ import 'package:zapp/screens/clientScreens/client_screen.dart';
 import 'package:zapp/screens/finder/finder_screen.dart';
 import 'package:zapp/screens/intro/welcome_screen.dart';
 import 'package:zapp/screens/login/login_screen.dart';
-import 'package:zapp/screens/sign_up/sign_up.dart';
+import 'package:zapp/screens/sign_up/sign_up_1.dart';
 import 'package:zapp/screens/specialities/specialities_screen.dart';
 import 'package:zapp/utils/health_logo.dart';
 import 'package:zapp/utils/styles.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
+import '../screens/chat/chat_screen.dart';
 import 'custom_bottom_nav.dart';
 
 class BottomBar extends StatefulWidget {
@@ -34,23 +35,28 @@ class _BottomBarState extends State<BottomBar> {
 
   @override
   Widget build(BuildContext context) {
-    List<PersistentBottomNavBarItem> persistentNavItems = [
-      /*PersistentBottomNavBarItem(
-        icon: ButtomBarIcons.homeIcon,
-        title: '',
-      ),*/
-      PersistentBottomNavBarItem(icon: ButtomBarIcons.messageIcon, title: ''),
-      PersistentBottomNavBarItem(
-          icon: ButtomBarIcons.stethoscopeIcon, title: ''),
-      PersistentBottomNavBarItem(icon: ButtomBarIcons.recordIcon, title: ''),
-      PersistentBottomNavBarItem(icon: const Icon(Icons.person), title: ''),
+    List<BottomIndicatorNavigationBarItem> bottomNavItems = [
+      BottomIndicatorNavigationBarItem(
+        icon: ButtomBarIcons.homeIcon.icon!,
+      ),
+      BottomIndicatorNavigationBarItem(
+        icon: ButtomBarIcons.messageIcon.icon!,
+      ),
+      BottomIndicatorNavigationBarItem(
+        icon: ButtomBarIcons.stethoscopeIcon.icon!,
+      ),
+      BottomIndicatorNavigationBarItem(
+        icon: ButtomBarIcons.recordIcon.icon!,
+      ),
+      BottomIndicatorNavigationBarItem(
+        icon: Icons.person,
+      ),
     ];
     final List<Widget> widgetOptions = [
+      SpecialitiesScreen(),
+      const ChatScreen(),
       const FinderScreen(),
       const HealthLogo(),
-      //const LoginScreen(),
-      SpecialitiesScreen(),
-      const BookingScreen(),
       const ClientScreen(),
     ];
 
@@ -71,24 +77,6 @@ class _BottomBarState extends State<BottomBar> {
       ),
     );
   }
-
-  List<BottomIndicatorNavigationBarItem> bottomNavItems = [
-    BottomIndicatorNavigationBarItem(
-      icon: ButtomBarIcons.homeIcon.icon!,
-    ),
-    BottomIndicatorNavigationBarItem(
-      icon: ButtomBarIcons.messageIcon.icon!,
-    ),
-    BottomIndicatorNavigationBarItem(
-      icon: ButtomBarIcons.stethoscopeIcon.icon!,
-    ),
-    BottomIndicatorNavigationBarItem(
-      icon: ButtomBarIcons.recordIcon.icon!,
-    ),
-    BottomIndicatorNavigationBarItem(
-      icon: Icons.person,
-    ),
-  ];
 }
 /* body: Center(
         child: _widgetOptions[_selectedindex],
