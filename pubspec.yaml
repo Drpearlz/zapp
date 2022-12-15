@@ -87,8 +87,10 @@ flutter:
     - family: SourceSansPro
       fonts:
         - asset: assets/fonts/SourceSansPro-Bold.ttf
-
         - asset: assets/fonts/SourceSansPro-Regular.ttf
+    - family: NotoSansJP
+      fonts:
+        - asset: assets/fonts/NotoSansJP-Medium.otf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

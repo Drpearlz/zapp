@@ -28,7 +28,7 @@ class ClientScreenWidget extends StatelessWidget {
                   color: Color(0xFF7B6CA8)),
             ),
           ),
-          Spacer(),
+          const Spacer(),
           const Icon(
             Icons.arrow_forward_ios,
             size: 25,

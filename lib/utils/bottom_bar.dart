@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:zapp/screens/booking/booking_screens/booking_screen1.dart';
 import 'package:zapp/screens/booking/booking_screen.dart';
 import 'package:zapp/screens/clientScreens/client_screen.dart';
+import 'package:zapp/screens/finder/finder_screen.dart';
 import 'package:zapp/screens/intro/welcome_screen.dart';
 import 'package:zapp/screens/login/login_screen.dart';
-import 'package:zapp/screens/sign_up/sign_up.dart';
+import 'package:zapp/screens/sign_up/sign_up_1.dart';
 import 'package:zapp/screens/specialities/specialities_screen.dart';
-import 'package:zapp/splash.dart';
 import 'package:zapp/utils/health_logo.dart';
 import 'package:zapp/utils/styles.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
@@ -48,9 +49,10 @@ class _BottomBarState extends State<BottomBar> {
     final List<Widget> widgetOptions = [
       SpecialitiesScreen(),
       const ChatScreen(),
+
+      const FinderScreen(),
+      const HealthLogo(),
       //const LoginScreen(),
-      SpecialitiesScreen(),
-      const BookingScreen(),
       const ClientScreen(),
     ];
 
@@ -66,7 +68,7 @@ class _BottomBarState extends State<BottomBar> {
         },
         items: bottomNavItems,
         activeColor: const Color(0xFF7B6CA8),
-        inactiveColor: Colors.black,
+        inactiveColor: const Color(0xFF222B45),
         indicatorColor: const Color(0xFF7B6CA8),
       ),
     );

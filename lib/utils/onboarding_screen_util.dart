@@ -3,11 +3,12 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:zapp/constant.dart';
 import 'package:zapp/screens/intro/welcome_screen.dart';
 
+class OnboardingScreenUtil extends StatefulWidget {
 
-class OnboardingScreenUtil extends StatelessWidget {
   final String backgroundImg;
   final String onBoardMsgHeading;
   final String onBoardMsgBody;
+  final PageController controller; //changed here
   final String nextMsg;
   final String buttonText;
   final String logoType;
@@ -17,10 +18,16 @@ class OnboardingScreenUtil extends StatelessWidget {
       required this.backgroundImg,
       required this.onBoardMsgHeading,
       required this.onBoardMsgBody,
+      required this.controller, //changed here
       this.nextMsg = 'Skip',
       this.buttonText = 'Next',
       this.logoType = 'assets/images/logo_transparent.png'});
 
+  @override
+  State<OnboardingScreenUtil> createState() => _OnboardingScreenUtilState();
+}
+
+class _OnboardingScreenUtilState extends State<OnboardingScreenUtil> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,7 +37,7 @@ class OnboardingScreenUtil extends StatelessWidget {
           Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage(backgroundImg),
+                image: AssetImage(widget.backgroundImg),
                 fit: BoxFit.fill,
               ),
             ),
@@ -59,14 +66,14 @@ class OnboardingScreenUtil extends StatelessWidget {
                   left: 259.87,
                 ),
                 child: Image.asset(
-                  logoType,
+                  widget.logoType,
                   width: 80.0,
                   height: 70.31,
                 ),
               ),
               const Spacer(),
               Text(
-                onBoardMsgHeading,
+                widget.onBoardMsgHeading,
                 style: const TextStyle(
                   color: Colors.white,
                   fontSize: 24,
@@ -78,7 +85,7 @@ class OnboardingScreenUtil extends StatelessWidget {
                 height: 20.0,
               ),
               Text(
-                onBoardMsgBody,
+                widget.onBoardMsgBody,
                 style: const TextStyle(
                   color: Colors.white,
                   fontSize: 14,
@@ -96,7 +103,7 @@ class OnboardingScreenUtil extends StatelessWidget {
                   );
                 },
                 child: Text(
-                  nextMsg,
+                  widget.nextMsg,
                   style: const TextStyle(
                     color: Colors.white,
                     fontSize: 14,
@@ -180,10 +187,18 @@ class OnboardingScreenUtil extends StatelessWidget {
                     ),
                     TextButton(
                       onPressed: () {
-                        Navigator.push(
-                            context,
+                        if (widget.buttonText == 'Next') {
+                          widget.controller.nextPage(
+                            duration: Duration(milliseconds: 300),
+                            curve: Curves.easeIn,
+                          );
+                        } else {
+                          Navigator.of(context).push(
                             MaterialPageRoute(
-                                builder: (context) => const WelcomePage()));
+                              builder: (context) => const WelcomePage(),
+                            ),
+                          );
+                        }
                       },
                       style: TextButton.styleFrom(
                         backgroundColor: Colors.white,
@@ -195,7 +210,7 @@ class OnboardingScreenUtil extends StatelessWidget {
                         child: Row(
                           children: [
                             Text(
-                              buttonText,
+                              widget.buttonText,
                               style: const TextStyle(
                                 color: kPrimaryColor, //Color(0xFF635BEB),
                                 fontWeight: FontWeight.w700,
