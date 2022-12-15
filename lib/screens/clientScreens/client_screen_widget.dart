@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class ClientScreenWidget extends StatelessWidget {
   final IconData icon;
   final String text;
-  final Function()? onpressed;
+  final void Function()? onpressed;
   const ClientScreenWidget(
       {Key? key, required this.icon, required this.text, this.onpressed})
       : super(key: key);
