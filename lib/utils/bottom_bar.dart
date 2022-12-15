@@ -10,6 +10,7 @@ import 'package:zapp/utils/health_logo.dart';
 import 'package:zapp/utils/styles.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
+import '../screens/chat/chat_screen.dart';
 import 'custom_bottom_nav.dart';
 
 class BottomBar extends StatefulWidget {
@@ -45,8 +46,8 @@ class _BottomBarState extends State<BottomBar> {
       PersistentBottomNavBarItem(icon: const Icon(Icons.person), title: ''),
     ];
     final List<Widget> widgetOptions = [
-      const SignUpScreen(),
-      const HealthLogo(),
+      SpecialitiesScreen(),
+      const ChatScreen(),
       //const LoginScreen(),
       SpecialitiesScreen(),
       const BookingScreen(),
