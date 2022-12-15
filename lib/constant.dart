@@ -10,3 +10,4 @@ const Color white = Color(0xFFF1F1F1);
 
 const Color mainPurple = Color(0xFF635BEB);
 const Color deepPurple = Color(0xFF432C81);
+const Color lightPurple = Color(0xFF82799D);

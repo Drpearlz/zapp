@@ -24,8 +24,9 @@ class _SignUpScreen2State extends State<SignUpScreen2> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(left: 110),
+                  padding: const EdgeInsets.only(left: 120),
                   child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: const [
                       Text(
@@ -66,16 +67,17 @@ class _SignUpScreen2State extends State<SignUpScreen2> {
                     'assets/images/Ivan Samkov.png',
                   ),
                 ),
-                const SizedBox(height: 18),
+                const SizedBox(height: 20),
                 const CustomField(hintText: 'Full Name'),
-                const SizedBox(height: 15.5),
+                const SizedBox(height: 17.7),
                 const CustomField(hintText: 'Email'),
-                const SizedBox(height: 15.5),
+                const SizedBox(height: 17.7),
                 const CustomField(
+                  revealText: true,
                   hintText: 'Password',
                   suffixIcon: Icon(Icons.remove_red_eye),
                 ),
-                const SizedBox(height: 18),
+                const SizedBox(height: 20),
                 SizedBox(
                   width: double.infinity,
                   height: 46.55,
@@ -135,7 +137,7 @@ class _SignUpScreen2State extends State<SignUpScreen2> {
                         'Not a Health Worker?',
                         textAlign: TextAlign.center,
                         style: TextStyle(
-                          color: kPrimaryColor,
+                          color: lightPurple,
                           fontSize: 14,
                           fontWeight: FontWeight.w500,
                           fontFamily: 'Raleway',
