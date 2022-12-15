@@ -38,20 +38,20 @@ class MyApp extends StatelessWidget {
 
       //home: BottomBar(),
       // home: const SplashScreen(),
-      // routes: {
-      //   '/': (context) => const SplashScreen(),
-      //   '/sign_up_1': (context) => const SignUpScreen1(),
-      //   '/sign_up_2': (context) => const SignUpScreen2(),
-      //   '/welcome': (context) => const WelcomePage(),
-      //   '/onboarding': (context) => const OnboardingScreen(),
-      //   '/bottombar': (context) => const BottomBar(),
-      //   '/login': (context) => const LoginScreen(),
-      //   '/booking': (context) => const BookingScreen(),
-      //   '/client': (context) => const ClientScreen(),
-      // },
+      routes: {
+        '/': (context) => const SplashScreen(),
+        //   '/sign_up_1': (context) => const SignUpScreen1(),
+        //   '/sign_up_2': (context) => const SignUpScreen2(),
+        //   '/welcome': (context) => const WelcomePage(),
+        //   '/onboarding': (context) => const OnboardingScreen(),
+        //   '/bottombar': (context) => const BottomBar(),
+        //   '/login': (context) => const LoginScreen(),
+        //   '/booking': (context) => const BookingScreen(),
+        //   '/client': (context) => const ClientScreen(),
+      },
 
       // home: ChatScreen(),
-      home: SignUpScreen2(),
+      // home: SignUpScreen2(),
     );
   }
 }
