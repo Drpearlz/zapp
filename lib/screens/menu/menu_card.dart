@@ -2,14 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:zapp/constant.dart';
 
 class MenuCard extends StatelessWidget {
-  const MenuCard({super.key, required this.menuCardText, required this.menuCardImage});
+   const MenuCard({super.key, required this.menuCardText, required this.menuCardImage, required this.menuCardNavigation});
 
   final String menuCardText;
   final AssetImage menuCardImage;
+  final Function menuCardNavigation;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
+      onTap: (){
+        menuCardNavigation;
+      },
       child: Card(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
         color: Colors.white60,
