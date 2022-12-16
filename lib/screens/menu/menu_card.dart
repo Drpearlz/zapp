@@ -10,8 +10,8 @@ class MenuCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      shape: cardShape,
-      color: cardColor,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
+      color: Colors.white60,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
@@ -19,9 +19,9 @@ class MenuCard extends StatelessWidget {
             'Your Diet Chart',
             style: TextStyle(
                 color: deepPurple,
-                fontSize: menuTextSize,
-                fontFamily: menuFontFamily,
-                fontWeight: menuFontWeight),
+                fontSize: 20.0,
+                fontFamily: 'Raleway',
+                fontWeight: FontWeight.w700),
           ),
           Container(
             margin: const EdgeInsets.all(8.0),
