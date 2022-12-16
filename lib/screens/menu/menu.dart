@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:zapp/constant.dart';
+import 'package:zapp/screens/medical%20history/medical_history.dart';
 import 'menu_card.dart';
 import 'package:zapp/screens/chat/chat_screen.dart';
 import 'package:zapp/screens/mapScreen/map_screen.dart';
 import 'package:zapp/screens/emptyStateLabResult/empty_state_result.dart';
-import 'package:zapp/screens/lab_result.dart';
+
 import 'package:zapp/screens/diet_chart.dart';
 
 
@@ -57,7 +58,7 @@ class Menu extends StatelessWidget {
                       height: 10.0,
                     ),
                      MenuCard(
-                      menuCardNavigation: Navigator.push(context, MaterialPageRoute(builder: (context) => const EmptyStateLabResult())),
+                      menuCardNavigation: Navigator.push(context, MaterialPageRoute(builder: (context) => const MedicalHistory())),
                       menuCardText: 'Medical History',
                       menuCardImage: const AssetImage(
                           'assets/images/menu/Lifesavers Electrocardiogram.png'),
@@ -66,7 +67,7 @@ class Menu extends StatelessWidget {
                       height: 10.0,
                     ),
                      MenuCard(
-                      menuCardNavigation: Navigator.push(context, MaterialPageRoute(builder: (context) => const LabResult())) ,
+                      menuCardNavigation: Navigator.push(context, MaterialPageRoute(builder: (context) => const EmptyStateLabResult())) ,
                       menuCardText: 'Lab Results',
                       menuCardImage: const AssetImage(
                           'assets/images/menu/Lifesavers Serum Bag.png'),
