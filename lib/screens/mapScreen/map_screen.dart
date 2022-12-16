@@ -7,7 +7,6 @@ import 'package:zapp/constant.dart';
 
 class Map_Screen extends StatefulWidget {
   const Map_Screen({Key? key}) : super(key: key);
-
   @override
   State<Map_Screen> createState() => _Map_ScreenState();
 }
@@ -23,6 +22,7 @@ class _Map_ScreenState extends State<Map_Screen> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
+          backgroundColor: kPrimaryColor,
           elevation: 0.0,
           leading: IconButton(
             icon: const Icon(Icons.arrow_back_sharp),
@@ -66,12 +66,45 @@ class _Map_ScreenState extends State<Map_Screen> {
             ),
           ),
         ),
-        body: GoogleMap(
-          initialCameraPosition: _kGooglePlex,
-          mapType: MapType.hybrid,
-          onMapCreated: (GoogleMapController controller) {
-            _controller.complete(controller);
-          },
+        body: Stack(
+          children: [
+            GoogleMap(
+              initialCameraPosition: _kGooglePlex,
+              mapType: MapType.hybrid,
+              onMapCreated: (GoogleMapController controller) {
+                _controller.complete(controller);
+              },
+            ),
+            Positioned(
+              bottom: 0,
+              child: Container(
+                height: 265,
+                width: 395,
+                color: kPrimaryColor,
+                child: Row(
+                  //mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 12.17, top: 56.35, right: 13.25, bottom: 33.35),
+                      child: Container(
+                        width: 177.45,
+                        height: 177.45,
+                        color: Colors.white,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 56.35, bottom: 33.35),
+                      child: Container(
+                        width: 177.45,
+                        height: 177.45,
+                        color: Colors.white,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            )
+          ]
         ),
       ),
     );

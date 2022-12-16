@@ -5,6 +5,7 @@ import 'package:zapp/screens/chat/chat_screen.dart';
 import 'package:zapp/screens/clientScreens/client_screen.dart';
 import 'package:zapp/screens/intro/welcome_screen.dart';
 import 'package:zapp/screens/login/login_screen.dart';
+import 'package:zapp/screens/mapScreen/map_screen.dart';
 import 'package:zapp/screens/sign_up/sign_up_1.dart';
 import 'package:zapp/screens/specialities/specialities_screen.dart';
 import 'package:zapp/screens/intro/onboarding_screen.dart';
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
       // initialRoute: '/',
       // This is the routes for the different screens so far
 
-      home: const ChatScreen(),
+      home: const Map_Screen(),
       // routes: {
       //   '/': (context) => const SplashScreen(),
       //   '/sign_up': (context) => const SignUpScreen1(),
