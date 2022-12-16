@@ -9,26 +9,28 @@ class MenuCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
-      color: Colors.white60,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: [
-          const Text(
-            'Your Diet Chart',
-            style: TextStyle(
-                color: deepPurple,
-                fontSize: 20.0,
-                fontFamily: 'Raleway',
-                fontWeight: FontWeight.w700),
-          ),
-          Container(
-            margin: const EdgeInsets.all(8.0),
-            child:  Image(
-               image: menuCardImage),
-          )
-        ],
+    return GestureDetector(
+      child: Card(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
+        color: Colors.white60,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            const Text(
+              'Your Diet Chart',
+              style: TextStyle(
+                  color: deepPurple,
+                  fontSize: 20.0,
+                  fontFamily: 'Raleway',
+                  fontWeight: FontWeight.w700),
+            ),
+            Container(
+              margin: const EdgeInsets.all(8.0),
+              child:  Image(
+                 image: menuCardImage),
+            )
+          ],
+        ),
       ),
     );
   }
