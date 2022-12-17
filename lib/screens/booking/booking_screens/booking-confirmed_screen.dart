@@ -53,7 +53,7 @@ class BookingConfirmedScreen extends StatelessWidget {
             const Gap(35),
             Container(
               margin: const EdgeInsets.only(left: 20.0, right: 20.0, top: 64.0),
-              constraints: BoxConstraints.expand(height: 300.0),
+              constraints: const BoxConstraints.expand(height: 300.0),
               width: MediaQuery.of(context).size.width * 0.65,
               decoration: const BoxDecoration(
                   image: DecorationImage(
@@ -62,7 +62,7 @@ class BookingConfirmedScreen extends StatelessWidget {
                       fit: BoxFit.cover)),
             ),
             Container(
-              margin: EdgeInsets.only(top: 20.0),
+              margin: const EdgeInsets.only(top: 20.0),
               width: MediaQuery.of(context).size.width * 0.60,
               child: const FittedBox(
                 fit: BoxFit.fitHeight,
