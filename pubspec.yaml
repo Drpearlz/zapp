@@ -40,6 +40,7 @@ dependencies:
   intl: ^0.17.0
   flutter:
       sdk: flutter
+  table_calendar: ^3.0.8
 
 
 dev_dependencies:
