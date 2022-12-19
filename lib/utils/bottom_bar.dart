@@ -56,6 +56,7 @@ class _BottomBarState extends State<BottomBar> {
       SpecialitiesScreen(),
       const ChatScreen(),
       const FinderScreen(),
+      // const Map_Screen(),
       // const HealthLogo(),
       const BookingScreen(),
       const ClientScreen(),
