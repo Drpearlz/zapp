@@ -5,8 +5,10 @@ import 'package:zapp/screens/chat/chat_screen.dart';
 import 'package:zapp/screens/clientScreens/client_screen.dart';
 import 'package:zapp/screens/intro/welcome_screen.dart';
 import 'package:zapp/screens/login/login_screen.dart';
+import 'package:zapp/screens/mapScreen/map_screen.dart';
 import 'package:zapp/screens/sign_up/sign_up_1.dart';
 import 'package:zapp/screens/sign_up/sign_up_2.dart';
+import 'package:zapp/screens/specialities/doctors_page.dart';
 import 'package:zapp/screens/specialities/specialities_screen.dart';
 import 'package:zapp/screens/intro/onboarding_screen.dart';
 import 'package:zapp/splash.dart';
@@ -51,6 +53,18 @@ class MyApp extends StatelessWidget {
       },
 
       // home: ChatScreen(),
+      home: const SplashScreen(),
+      // routes: {
+      //   '/': (context) => const SplashScreen(),
+      //   '/sign_up': (context) => const SignUpScreen1(),
+      //   '/welcome': (context) => const WelcomePage(),
+      //   '/onboarding': (context) => const OnboardingScreen(),
+      //   '/bottombar': (context) => const BottomBar(),
+      //   '/login': (context) => const LoginScreen(),
+      //   '/booking': (context) => const BookingScreen(),
+      //   '/client': (context) => const ClientScreen(),
+      // },
+      // home: MyHomePage(),
     );
   }
 }

@@ -103,10 +103,12 @@ class GridDashBoard extends StatelessWidget {
                     width: 55,
                   ),
                   const Gap(14),
-                  Text(
-                    data.title,
-                    style: const TextStyle(
-                        fontSize: 20, fontWeight: FontWeight.bold),
+                  Center(
+                    child: Text(
+                      data.title,
+                      style: const TextStyle(
+                          fontSize: 20, fontWeight: FontWeight.bold),
+                    ),
                   ),
                   const Gap(8),
                   Text(
