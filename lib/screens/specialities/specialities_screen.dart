@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'grid_dash_board.dart';
 
 class SpecialitiesScreen extends StatelessWidget {
@@ -27,12 +28,12 @@ class SpecialitiesScreen extends StatelessWidget {
                   ),
                 ),
                 const Gap(25),
-                const Text(
+                Text(
                   'Specialities',
-                  style: TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: 'SourceSansPro'),
+                  style: GoogleFonts.raleway(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ],
             ),

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
-void main() {
-  runApp(const EmptyStateLabResult());
-}
+// void main() {
+//   runApp(const EmptyStateLabResult());
+// }
 
 class EmptyStateLabResult extends StatelessWidget {
   const EmptyStateLabResult({super.key});
@@ -10,13 +11,11 @@ class EmptyStateLabResult extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        fontFamily: 'Raleway',
-      ),
+      theme: ThemeData(),
       home: Scaffold(
         appBar: AppBar(
           elevation: 0,
-          leading:  IconButton(
+          leading: IconButton(
             color: Colors.black,
             icon: const Icon(Icons.arrow_back),
             onPressed: () {},
@@ -40,23 +39,22 @@ class EmptyStateLabResult extends StatelessWidget {
                     ),
                   ),
                 ),
-                const Padding(
-                  padding:  EdgeInsets.only(bottom: 6.0),
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 6.0),
                   child: Text(
                     'Opps! Nothing to see here',
-                    style: TextStyle(
-                      fontSize: 22,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.deepPurple
-                    ),
+                    style: GoogleFonts.raleway(
+                        fontSize: 22,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.deepPurple),
                   ),
                 ),
-                const Text(
+                Text(
                   'Tap the screen to try again',
-                  style: TextStyle(fontSize: 17.641,
-                  color: Colors.deepPurple,
-                  fontWeight: FontWeight.w300),
-                  
+                  style: GoogleFonts.raleway(
+                      fontSize: 17.641,
+                      color: Colors.deepPurple,
+                      fontWeight: FontWeight.w300),
                 ),
               ],
             ),

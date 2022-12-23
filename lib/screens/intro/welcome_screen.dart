@@ -3,7 +3,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:zapp/constant.dart';
-
 import '../login/login_screen.dart';
 import '../sign_up/sign_up_1.dart';
 
@@ -42,7 +41,7 @@ class _WelcomePageState extends State<WelcomePage> {
                     ),
                   ],
                 ),
-                SizedBox(height: 155),
+                SizedBox(height: 100),
 
                 // Welcome to Jejelove Health!
                 Text(
@@ -52,7 +51,7 @@ class _WelcomePageState extends State<WelcomePage> {
                       fontSize: 24,
                       color: mainPurple),
                 ),
-                SizedBox(height: 105.1),
+                SizedBox(height: 70),
 
                 // Buttons
                 Column(
@@ -73,8 +72,7 @@ class _WelcomePageState extends State<WelcomePage> {
                         child: Center(
                           child: Text(
                             'Create Account',
-                            style: TextStyle(
-                                fontFamily: 'Source Sans Pro',
+                            style: GoogleFonts.raleway(
                                 color: white,
                                 fontSize: 17.34,
                                 fontWeight: FontWeight.w600),
@@ -104,8 +102,7 @@ class _WelcomePageState extends State<WelcomePage> {
                           child: Center(
                             child: Text(
                               'Sign In',
-                              style: TextStyle(
-                                  fontFamily: 'Source Sans Pro',
+                              style: GoogleFonts.raleway(
                                   color: mainPurple,
                                   fontSize: 17.34,
                                   fontWeight: FontWeight.w600),

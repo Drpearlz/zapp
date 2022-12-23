@@ -9,7 +9,7 @@ class QuickFilterCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top:10.0,bottom:10),
+      padding: const EdgeInsets.only(top: 10.0, bottom: 10),
       child: Row(
         children: [
           Padding(
@@ -21,14 +21,16 @@ class QuickFilterCard extends StatelessWidget {
                 color: const Color(0xFF6574CF).withOpacity(0.08),
                 borderRadius: BorderRadius.circular(4.5),
               ),
-              child:Icon(
-                icon,size:25,),
+              child: Icon(
+                icon,
+                size: 25,
+              ),
             ),
           ),
           const SizedBox(
             width: 17,
           ),
-         Text(
+          Text(
             text,
             style: const TextStyle(
               fontSize: 17,
@@ -48,8 +50,8 @@ class QuickFilterCard extends StatelessWidget {
               }),
               value: false,
               onChanged: (value) {},
-              shape:
-                  RoundedRectangleBorder(borderRadius: BorderRadius.circular(3)),
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(3)),
             ),
           )
         ],

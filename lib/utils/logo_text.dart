@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:zapp/constant.dart';
 
 //Class that build the Logo and Text
@@ -40,11 +41,11 @@ class LogoText extends StatelessWidget {
         ),
         const Gap(20),
         showText == true
-            ? const Text(
+            ? Text(
                 "Jejelove Health",
-                style: TextStyle(
+                style: GoogleFonts.righteous(
                   color: kPrimaryColor,
-                  fontFamily: 'Righteous',
+
                   fontWeight: FontWeight.w400,
                   fontSize: 30.0,
                   // letterSpacing: 2.0,
