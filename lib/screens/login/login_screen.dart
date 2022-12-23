@@ -42,7 +42,7 @@ class LoginScreen extends StatelessWidget {
               ),
               SizedBox(
                 child: Image.asset('assets/images/Lifesavers Bust 2.png',
-                    height: 200, width: MediaQuery.of(context).size.width * 95),
+                    height: 200, width: MediaQuery.of(context).size.width * 96),
               ),
               const SizedBox(
                 height: 23.47,
