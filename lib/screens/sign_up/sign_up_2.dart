@@ -83,7 +83,7 @@ class _SignUpScreen2State extends State<SignUpScreen2> {
                   height: 46.55,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: deepPurple,
+                      primary: deepPurple,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(5),
                       ),

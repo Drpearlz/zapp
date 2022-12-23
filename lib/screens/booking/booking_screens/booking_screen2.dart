@@ -153,7 +153,7 @@ class _BookingScreenTwoState extends State<BookingScreenTwo> {
                                 horizontal: 15,
                                 vertical: 18,
                               ),
-                              backgroundColor: const Color(0xFF625be9),
+                              onPrimary: const Color(0xFF625be9),
                             ),
                           ),
                         )
@@ -246,7 +246,7 @@ class _BookingScreenTwoState extends State<BookingScreenTwo> {
                   padding:
                       const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
                   minimumSize: const Size.fromHeight(60),
-                  backgroundColor: const Color(0xFF625be9),
+                  primary: const Color(0xFF625be9),
                 ),
                 child: const Text('NEXT'),
               ),
