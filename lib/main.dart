@@ -14,8 +14,7 @@ import 'package:zapp/screens/intro/onboarding_screen.dart';
 import 'package:zapp/splash.dart';
 import 'package:zapp/utils/health_logo.dart';
 import 'package:zapp/screens/booking/booking_screen.dart';
-
-import 'screens/intro/welcome_screen.dart';
+import 'dart:ffi';
 import 'utils/bottom_bar.dart';
 
 void main() {
@@ -51,20 +50,6 @@ class MyApp extends StatelessWidget {
         '/booking': (context) => const BookingScreen(),
         '/client': (context) => const ClientScreen(),
       },
-
-      // home: ChatScreen(),
-      home: const SplashScreen(),
-      // routes: {
-      //   '/': (context) => const SplashScreen(),
-      //   '/sign_up': (context) => const SignUpScreen1(),
-      //   '/welcome': (context) => const WelcomePage(),
-      //   '/onboarding': (context) => const OnboardingScreen(),
-      //   '/bottombar': (context) => const BottomBar(),
-      //   '/login': (context) => const LoginScreen(),
-      //   '/booking': (context) => const BookingScreen(),
-      //   '/client': (context) => const ClientScreen(),
-      // },
-      // home: MyHomePage(),
     );
   }
 }

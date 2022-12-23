@@ -183,7 +183,7 @@ class _Map_ScreenState extends State<Map_Screen> {
                                   width: 124.87,
                                 decoration: BoxDecoration(
                                  borderRadius: BorderRadius.circular(4.38),
-                                  color: LightGrayishCyan
+                                  color: lightGrayishCyan
                                 ),
                                 child: const Center(
                                   child: Text(
@@ -294,7 +294,7 @@ class _Map_ScreenState extends State<Map_Screen> {
                                 width: 124.87,
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(4.38),
-                                    color: LightGrayishCyan
+                                    color: lightGrayishCyan
                                 ),
                                 child: const Center(
                                   child: Text(

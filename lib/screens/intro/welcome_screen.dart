@@ -19,30 +19,33 @@ class _WelcomePageState extends State<WelcomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: SingleChildScrollView(
+        child: Expanded(
           child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 SizedBox(height: 150),
-                // Logo
+                // Logo and Jejelove Health text
                 Stack(
                   children: [
                     Center(child: Image.asset('assets/logo/flaked-logo.png')),
                     SizedBox(height: 5),
                     Positioned(
-                      left: 145,
+                      left: MediaQuery.of(context).size.width * 0.35,
                       bottom: 30,
-                      child: Text(
-                        'Jejelove Health',
-                        style: GoogleFonts.righteous(
-                            fontWeight: FontWeight.w400,
-                            fontSize: 16,
-                            color: mainPurple),
+                      child: Center(
+                        child: Text(
+                          'Jejelove Health',
+                          textAlign: TextAlign.center,
+                          style: GoogleFonts.righteous(
+                              fontWeight: FontWeight.w400,
+                              fontSize: 16,
+                              color: mainPurple),
+                        ),
                       ),
                     ),
                   ],
                 ),
-                SizedBox(height: 155),
+                SizedBox(height: MediaQuery.of(context).size.height * 0.05),
 
                 // Welcome to Jejelove Health!
                 Text(
@@ -52,7 +55,9 @@ class _WelcomePageState extends State<WelcomePage> {
                       fontSize: 24,
                       color: mainPurple),
                 ),
-                SizedBox(height: 105.1),
+                SizedBox(
+                  height: 100,
+                ),
 
                 // Buttons
                 Column(
@@ -64,20 +69,23 @@ class _WelcomePageState extends State<WelcomePage> {
                           MaterialPageRoute(
                             builder: (context) => SignUpScreen1(),
                           )),
-                      child: Container(
-                        width: 366,
-                        height: 52.97,
-                        decoration: BoxDecoration(
-                            color: kPrimaryColor,
-                            borderRadius: BorderRadius.circular(30.82)),
-                        child: Center(
-                          child: Text(
-                            'Create Account',
-                            style: TextStyle(
-                                fontFamily: 'Source Sans Pro',
-                                color: white,
-                                fontSize: 17.34,
-                                fontWeight: FontWeight.w600),
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 20),
+                        child: Container(
+                          width: double.infinity,
+                          height: 52.97,
+                          decoration: BoxDecoration(
+                              color: kPrimaryColor,
+                              borderRadius: BorderRadius.circular(30.82)),
+                          child: Center(
+                            child: Text(
+                              'Create Account',
+                              style: TextStyle(
+                                  fontFamily: 'Source Sans Pro',
+                                  color: white,
+                                  fontSize: 17.34,
+                                  fontWeight: FontWeight.w600),
+                            ),
                           ),
                         ),
                       ),
@@ -93,22 +101,27 @@ class _WelcomePageState extends State<WelcomePage> {
                             MaterialPageRoute(
                               builder: (context) => LoginScreen(),
                             )),
-                        child: Container(
-                          width: 366,
-                          height: 52.97,
-                          decoration: BoxDecoration(
-                              border: Border.all(
-                                color: mainPurple,
-                              ),
-                              borderRadius: BorderRadius.circular(30.82)),
-                          child: Center(
-                            child: Text(
-                              'Sign In',
-                              style: TextStyle(
-                                  fontFamily: 'Source Sans Pro',
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 20),
+                          child: Container(
+                            width: double.infinity,
+                            // width: 366,
+                            height: 52.97,
+
+                            decoration: BoxDecoration(
+                                border: Border.all(
                                   color: mainPurple,
-                                  fontSize: 17.34,
-                                  fontWeight: FontWeight.w600),
+                                ),
+                                borderRadius: BorderRadius.circular(30.82)),
+                            child: Center(
+                              child: Text(
+                                'Sign In',
+                                style: TextStyle(
+                                    fontFamily: 'Source Sans Pro',
+                                    color: mainPurple,
+                                    fontSize: 17.34,
+                                    fontWeight: FontWeight.w600),
+                              ),
                             ),
                           ),
                         ),
