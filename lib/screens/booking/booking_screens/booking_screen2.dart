@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class BookingScreenTwo extends StatefulWidget {
   const BookingScreenTwo({super.key});
@@ -31,17 +30,17 @@ class _BookingScreenTwoState extends State<BookingScreenTwo> {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
+                const Text(
                   'Set type of call',
-                  style: GoogleFonts.raleway(
+                  style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.w500,
                   ),
                 ),
                 RadioListTile(
-                  title: Text(
+                  title: const Text(
                     'Video Call',
-                    style: GoogleFonts.raleway(fontSize: 15),
+                    style: TextStyle(fontSize: 15),
                   ),
                   activeColor: const Color(0xFF625be9),
                   value: 'Video Call',
@@ -53,9 +52,9 @@ class _BookingScreenTwoState extends State<BookingScreenTwo> {
                   },
                 ),
                 RadioListTile(
-                  title: Text(
+                  title: const Text(
                     'Hospital-Clinic visit',
-                    style: GoogleFonts.raleway(fontSize: 15),
+                    style: TextStyle(fontSize: 15),
                   ),
                   value: 'Hospital-Clinic visit',
                   activeColor: const Color(0xFF625be9),
@@ -72,9 +71,9 @@ class _BookingScreenTwoState extends State<BookingScreenTwo> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
+                    const Text(
                       'Do you have insurance?',
-                      style: GoogleFonts.raleway(
+                      style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w500,
                       ),
@@ -102,9 +101,9 @@ class _BookingScreenTwoState extends State<BookingScreenTwo> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        const Text(
                           'Write the reason of your visit, please',
-                          style: GoogleFonts.raleway(
+                          style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.w500,
                           ),
@@ -128,17 +127,17 @@ class _BookingScreenTwoState extends State<BookingScreenTwo> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        const Text(
                           'You may upload related EHR files, if you wish',
-                          style: GoogleFonts.raleway(
+                          style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.w500,
                           ),
                         ),
                         const Gap(5),
-                        Text(
+                        const Text(
                           'These files will only be available for your doctor.',
-                          style: GoogleFonts.raleway(
+                          style: TextStyle(
                             fontSize: 12,
                             fontWeight: FontWeight.w400,
                           ),
@@ -150,11 +149,11 @@ class _BookingScreenTwoState extends State<BookingScreenTwo> {
                             icon: const Icon(Icons.upload),
                             onPressed: () {},
                             style: ElevatedButton.styleFrom(
-                              foregroundColor: const Color(0xFF625be9),
                               padding: const EdgeInsets.symmetric(
                                 horizontal: 15,
                                 vertical: 18,
                               ),
+                              onPrimary: const Color(0xFF625be9),
                             ),
                           ),
                         )
@@ -166,17 +165,17 @@ class _BookingScreenTwoState extends State<BookingScreenTwo> {
             ),
             const Divider(),
             const Gap(10),
-            Text(
+            const Text(
               'Have you visit this doctor before',
-              style: GoogleFonts.raleway(
+              style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.w500,
               ),
             ),
             RadioListTile(
-              title: Text(
+              title: const Text(
                 'Yes',
-                style: GoogleFonts.raleway(fontSize: 15),
+                style: TextStyle(fontSize: 15),
               ),
               activeColor: const Color(0xFF625be9),
               value: 'Yes',
@@ -188,9 +187,9 @@ class _BookingScreenTwoState extends State<BookingScreenTwo> {
               },
             ),
             RadioListTile(
-              title: Text(
+              title: const Text(
                 'No',
-                style: GoogleFonts.raleway(fontSize: 15),
+                style: TextStyle(fontSize: 15),
               ),
               value: 'No',
               activeColor: const Color(0xFF625be9),
@@ -203,17 +202,17 @@ class _BookingScreenTwoState extends State<BookingScreenTwo> {
             ),
             const Divider(),
             const Gap(10),
-            Text(
+            const Text(
               'Payment Process',
-              style: GoogleFonts.raleway(
+              style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.w500,
               ),
             ),
             RadioListTile(
-              title: Text(
+              title: const Text(
                 'After visit',
-                style: GoogleFonts.raleway(fontSize: 15),
+                style: TextStyle(fontSize: 15),
               ),
               activeColor: const Color(0xFF625be9),
               value: 'After visit',
@@ -225,9 +224,9 @@ class _BookingScreenTwoState extends State<BookingScreenTwo> {
               },
             ),
             RadioListTile(
-              title: Text(
+              title: const Text(
                 'Before visit',
-                style: GoogleFonts.raleway(fontSize: 15),
+                style: TextStyle(fontSize: 15),
               ),
               value: 'Before visit',
               activeColor: const Color(0xFF625be9),
@@ -246,8 +245,8 @@ class _BookingScreenTwoState extends State<BookingScreenTwo> {
                 style: ElevatedButton.styleFrom(
                   padding:
                       const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-                  backgroundColor: const Color(0xFF625be9),
                   minimumSize: const Size.fromHeight(60),
+                  primary: const Color(0xFF625be9),
                 ),
                 child: const Text('NEXT'),
               ),

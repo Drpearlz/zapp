@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:intl/intl.dart';
 
 class ChatWidget extends StatelessWidget {
   final String messageText;
   final bool isMe;
-  const ChatWidget({super.key, required this.isMe, required this.messageText});
+  ChatWidget({super.key, required this.isMe, required this.messageText});
   @override
   Widget build(BuildContext context) {
     return Expanded(
       child: Container(
-        padding: const EdgeInsets.all(10),
-        margin: const EdgeInsets.all(5),
+        padding: EdgeInsets.all(10),
+        margin: EdgeInsets.all(5),
         decoration: BoxDecoration(
             borderRadius: isMe
                 ? const BorderRadius.only(
@@ -28,10 +28,9 @@ class ChatWidget extends StatelessWidget {
           padding: const EdgeInsets.all(8),
           child: Text(
             messageText.toString(),
-            style: GoogleFonts.raleway(
+            style: TextStyle(
                 fontSize: 18,
-                color:
-                    isMe ? const Color(0xFFFFFFFF) : const Color(0xFF000000)),
+                color: isMe ? Color(0xFFFFFFFF) : Color(0xFF000000)),
           ),
         ),
       ),

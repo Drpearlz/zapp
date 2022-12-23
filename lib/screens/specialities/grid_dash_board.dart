@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class Items {
   String title;
@@ -107,14 +106,14 @@ class GridDashBoard extends StatelessWidget {
                   Center(
                     child: Text(
                       data.title,
-                      style: GoogleFonts.raleway(
+                      style: const TextStyle(
                           fontSize: 20, fontWeight: FontWeight.bold),
                     ),
                   ),
                   const Gap(8),
                   Text(
                     data.volume,
-                    style: GoogleFonts.raleway(
+                    style: const TextStyle(
                       color: Colors.grey,
                       fontSize: 15,
                       fontWeight: FontWeight.w500,

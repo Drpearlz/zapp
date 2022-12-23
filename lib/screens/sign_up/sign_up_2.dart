@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:zapp/constant.dart';
 import 'package:zapp/utils/custom_field.dart';
 
@@ -29,18 +28,19 @@ class _SignUpScreen2State extends State<SignUpScreen2> {
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
+                    children: const [
                       Text(
                         'Hello there,',
                         textAlign: TextAlign.center,
-                        style: GoogleFonts.raleway(
+                        style: TextStyle(
                           color: deepPurple,
                           fontSize: 20,
                           fontWeight: FontWeight.w700,
+                          fontFamily: 'Raleway',
                           letterSpacing: -0.5,
                         ),
                       ),
-                      const Image(
+                      Image(
                         height: 45,
                         width: 45,
                         image: AssetImage(
@@ -50,13 +50,14 @@ class _SignUpScreen2State extends State<SignUpScreen2> {
                     ],
                   ),
                 ),
-                Text(
+                const Text(
                   'Sign Up',
                   textAlign: TextAlign.center,
-                  style: GoogleFonts.raleway(
+                  style: TextStyle(
                     color: deepPurple,
                     fontSize: 32,
                     fontWeight: FontWeight.w700,
+                    fontFamily: 'Raleway',
                     letterSpacing: -1,
                   ),
                 ),
@@ -82,15 +83,15 @@ class _SignUpScreen2State extends State<SignUpScreen2> {
                   height: 46.55,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: deepPurple,
+                      primary: deepPurple,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(5),
                       ),
                     ),
                     onPressed: () {},
-                    child: Text(
+                    child: const Text(
                       'Sign Up',
-                      style: GoogleFonts.raleway(
+                      style: TextStyle(
                         color: white,
                         fontSize: 16,
                         fontWeight: FontWeight.w600,
@@ -99,13 +100,14 @@ class _SignUpScreen2State extends State<SignUpScreen2> {
                   ),
                 ),
                 const SizedBox(height: 15),
-                Text(
+                const Text(
                   'or Using Social Media',
                   textAlign: TextAlign.center,
-                  style: GoogleFonts.righteous(
+                  style: TextStyle(
                     color: black,
                     fontSize: 12,
                     fontWeight: FontWeight.w400,
+                    fontFamily: 'Source Sans Pro',
                   ),
                 ),
                 const SizedBox(height: 10),
@@ -130,24 +132,26 @@ class _SignUpScreen2State extends State<SignUpScreen2> {
                   padding:
                       const EdgeInsets.symmetric(horizontal: 45, vertical: 5),
                   child: Row(
-                    children: [
+                    children: const [
                       Text(
                         'Not a Health Worker?',
                         textAlign: TextAlign.center,
-                        style: GoogleFonts.raleway(
+                        style: TextStyle(
                           color: lightPurple,
                           fontSize: 14,
                           fontWeight: FontWeight.w500,
+                          fontFamily: 'Raleway',
                         ),
                       ),
                       SizedBox(width: 8.85),
                       Text(
                         'Sign Up Here',
                         textAlign: TextAlign.center,
-                        style: GoogleFonts.raleway(
+                        style: TextStyle(
                           color: deepPurple,
                           fontSize: 14,
                           fontWeight: FontWeight.w500,
+                          fontFamily: 'Source Sans Pro',
                         ),
                       ),
                     ],

@@ -1,7 +1,6 @@
 import 'package:awesome_icons/awesome_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:zapp/screens/clientScreens/client_screen_widget.dart';
 
 class ClientScreen extends StatelessWidget {
@@ -14,12 +13,13 @@ class ClientScreen extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 20),
         children: [
           const Gap(20),
-          Text(
+          const Text(
             'My Account',
-            style: GoogleFonts.righteous(
+            style: TextStyle(
               fontSize: 30,
               fontWeight: FontWeight.bold,
-              color: const Color(0xFF432C81),
+              fontFamily: 'Righteous',
+              color: Color(0xFF432C81),
             ),
           ),
           const Gap(20),
@@ -46,17 +46,21 @@ class ClientScreen extends StatelessWidget {
                 ],
               ),
               const Gap(10),
-              Text('Scientist',
-                  style: GoogleFonts.raleway(
-                    color: const Color(0xFF432C81),
+              const Text(
+                'Scientist',
+                style: TextStyle(
+                    color: Color(0xFF432C81),
                     fontSize: 35,
                     fontWeight: FontWeight.bold,
-                  )),
+                    fontFamily: 'Raleway'),
+              ),
               const Gap(5),
-              Text(
+              const Text(
                 'hibraheem160@gmail.com',
-                style: GoogleFonts.raleway(
-                    color: const Color(0xFF7B6CA8), fontSize: 15),
+                style: TextStyle(
+                    color: Color(0xFF7B6CA8),
+                    fontFamily: 'Raleway',
+                    fontSize: 15),
               ),
             ],
           ),
