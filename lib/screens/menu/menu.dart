@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:zapp/constant.dart';
 import 'package:zapp/screens/medical%20history/medical_history.dart';
 import 'menu_card.dart';
@@ -7,7 +8,6 @@ import 'package:zapp/screens/mapScreen/map_screen.dart';
 import 'package:zapp/screens/emptyStateLabResult/empty_state_result.dart';
 
 import 'package:zapp/screens/diet_chart.dart';
-
 
 class Menu extends StatelessWidget {
   const Menu({Key? key}) : super(key: key);
@@ -20,19 +20,18 @@ class Menu extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           mainAxisSize: MainAxisSize.max,
           children: [
-            const ListTile(
+            ListTile(
               horizontalTitleGap: 5.0,
-              contentPadding: EdgeInsets.fromLTRB(15, 20, 15, 5),
-              leading: Icon(
+              contentPadding: const EdgeInsets.fromLTRB(15, 20, 15, 5),
+              leading: const Icon(
                 Icons.waving_hand,
                 color: Colors.orangeAccent,
               ),
               title: Text(
                 'Hi Peggy!',
-                style: TextStyle(
+                style: GoogleFonts.raleway(
                     color: deepPurple,
                     fontSize: 20.0,
-                    fontFamily: 'Raleway',
                     fontWeight: FontWeight.w700),
               ),
               trailing: CircleAvatar(
@@ -47,9 +46,12 @@ class Menu extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   mainAxisSize: MainAxisSize.max,
-                  children:  [
+                  children: [
                     MenuCard(
-                      menuCardNavigation: Navigator.push(context, MaterialPageRoute(builder: (context) => const DietChat())),
+                      menuCardNavigation: Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const DietChat())),
                       menuCardText: 'Your Diet Chart',
                       menuCardImage: const AssetImage(
                           'assets/images/menu/Lifesavers Stomach.png'),
@@ -57,8 +59,11 @@ class Menu extends StatelessWidget {
                     const SizedBox(
                       height: 10.0,
                     ),
-                     MenuCard(
-                      menuCardNavigation: Navigator.push(context, MaterialPageRoute(builder: (context) => const MedicalHistory())),
+                    MenuCard(
+                      menuCardNavigation: Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const MedicalHistory())),
                       menuCardText: 'Medical History',
                       menuCardImage: const AssetImage(
                           'assets/images/menu/Lifesavers Electrocardiogram.png'),
@@ -66,8 +71,12 @@ class Menu extends StatelessWidget {
                     const SizedBox(
                       height: 10.0,
                     ),
-                     MenuCard(
-                      menuCardNavigation: Navigator.push(context, MaterialPageRoute(builder: (context) => const EmptyStateLabResult())) ,
+                    MenuCard(
+                      menuCardNavigation: Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  const EmptyStateLabResult())),
                       menuCardText: 'Lab Results',
                       menuCardImage: const AssetImage(
                           'assets/images/menu/Lifesavers Serum Bag.png'),
@@ -76,16 +85,22 @@ class Menu extends StatelessWidget {
                       height: 10.0,
                     ),
                     MenuCard(
-                      menuCardNavigation: Navigator.push(context, MaterialPageRoute(builder: (context) => const ChatScreen())),
+                      menuCardNavigation: Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const ChatScreen())),
                       menuCardText: 'Online Chart',
-                      menuCardImage:
-                          const AssetImage('assets/images/menu/Lifesavers Bust.png'),
+                      menuCardImage: const AssetImage(
+                          'assets/images/menu/Lifesavers Bust.png'),
                     ),
                     const SizedBox(
                       height: 10.0,
                     ),
-                     MenuCard(
-                      menuCardNavigation: Navigator.push(context, MaterialPageRoute(builder: (context) => const Map_Screen())) ,
+                    MenuCard(
+                      menuCardNavigation: Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Map_Screen())),
                       menuCardText: 'Finding a Doctor',
                       menuCardImage: const AssetImage(
                           'assets/images/menu/Lifesavers Stethoscope.png'),
