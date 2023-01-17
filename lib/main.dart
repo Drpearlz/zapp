@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, unused_import
 
 import 'package:flutter/material.dart';
+import 'package:zapp/screens/chat_screen/chat_screen.dart';
 import 'package:zapp/screens/chat/chat_screen.dart';
 import 'package:zapp/screens/clientScreens/client_screen.dart';
 import 'package:zapp/screens/intro/welcome_screen.dart';
@@ -14,8 +15,8 @@ import 'package:zapp/screens/intro/onboarding_screen.dart';
 import 'package:zapp/splash.dart';
 import 'package:zapp/utils/health_logo.dart';
 import 'package:zapp/screens/booking/booking_screen.dart';
-
 import 'screens/intro/welcome_screen.dart';
+import 'dart:ffi';
 import 'utils/bottom_bar.dart';
 
 void main() {
@@ -42,6 +43,20 @@ class MyApp extends StatelessWidget {
       // home: const SplashScreen(),
       routes: {
         '/': (context) => const SplashScreen(),
+        '/sign_up': (context) => const SignUpScreen(),
+        '/onboarding': (context) => const OnboardingScreen(),
+        '/bottombar':(context) => const BottomBar(),
+        '/login': (context) => const LoginScreen(),
+        '/chat': (context) => const ChatScreen(),
+        //'/sign_up': (context) => const SignUpScreen(),
+        //'/welcome': (context) => const WelcomeScreen(),
+        //'/onboarding': (context) => const OnboardingScreen(),
+        //'/bottombar':(context) => const BottomBar(),
+        //'/login': (context) => const LoginScreen(),
+        //'/booking': (context) => const BookingScreen(),
+        //'/client': (context) => const ClientScreen(),
+        //'/map_screen': (context) => const Map_Screen()
+
         '/sign_up_1': (context) => const SignUpScreen1(),
         '/sign_up_2': (context) => const SignUpScreen2(),
         '/welcome': (context) => const WelcomePage(),
@@ -65,6 +80,7 @@ class MyApp extends StatelessWidget {
       //   '/client': (context) => const ClientScreen(),
       // },
       // home: MyHomePage(),
+    },
     );
   }
 }
