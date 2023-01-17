@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ReusableCard extends StatelessWidget {
   final String day;
   final String description;
-  ReusableCard({required this.day, required this.description});
+  const ReusableCard({required this.day, required this.description});
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -15,7 +16,7 @@ class ReusableCard extends StatelessWidget {
           padding: const EdgeInsets.fromLTRB(0, 20, 0, 10),
           child: Text(
             day,
-            style: const TextStyle(
+            style: GoogleFonts.raleway(
                 color: Color.fromARGB(228, 54, 1, 115),
                 fontSize: 16.0,
                 fontWeight: FontWeight.bold),
@@ -25,9 +26,9 @@ class ReusableCard extends StatelessWidget {
           padding: const EdgeInsets.only(bottom: 20.0),
           child: Text(
             description,
-            style: const TextStyle(
+            style: GoogleFonts.raleway(
               fontSize: 14,
-              color: Color.fromARGB(228, 54, 1, 115),
+              color: const Color.fromARGB(228, 54, 1, 115),
             ),
           ),
         ),

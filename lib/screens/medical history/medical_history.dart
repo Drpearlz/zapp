@@ -10,7 +10,10 @@ class MedicalHistory extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(fontFamily: 'Raleway'),
+      theme: ThemeData(
+          textTheme: TextTheme(
+        subtitle1: GoogleFonts.raleway(),
+      )),
       home: Scaffold(
         body: SafeArea(
           child: CustomScrollView(
@@ -30,11 +33,11 @@ class MedicalHistory extends StatelessWidget {
                   child: Center(
                     child: Container(
                       height: 100.49,
-                      child: const ListTile(
+                      child: ListTile(
                         minVerticalPadding: 38,
                         title: Text(
                           'Medical History',
-                          style: TextStyle(
+                          style: GoogleFonts.raleway(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                             color: Color.fromARGB(228, 54, 1, 115),

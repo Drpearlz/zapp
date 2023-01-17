@@ -3,7 +3,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:zapp/constant.dart';
-
 import '../login/login_screen.dart';
 import '../sign_up/sign_up_1.dart';
 
@@ -45,7 +44,11 @@ class _WelcomePageState extends State<WelcomePage> {
                     ),
                   ],
                 ),
+
+                SizedBox(height: 100),
+
                 SizedBox(height: MediaQuery.of(context).size.height * 0.05),
+
 
                 // Welcome to Jejelove Health!
                 Text(
@@ -55,10 +58,10 @@ class _WelcomePageState extends State<WelcomePage> {
                       fontSize: 24,
                       color: mainPurple),
                 ),
-                SizedBox(
+                SizedBox(height: 70),
+               SizedBox(
                   height: 100,
                 ),
-
                 // Buttons
                 Column(
                   children: [
@@ -68,7 +71,21 @@ class _WelcomePageState extends State<WelcomePage> {
                           context,
                           MaterialPageRoute(
                             builder: (context) => SignUpScreen1(),
-                          )),
+                         )),
+                      child: Container(
+                        width: 366,
+                        height: 52.97,
+                        decoration: BoxDecoration(
+                            color: kPrimaryColor,
+                            borderRadius: BorderRadius.circular(30.82)),
+                        child: Center(
+                          child: Text(
+                            'Create Account',
+                            style: GoogleFonts.raleway(
+                                color: white,
+                                fontSize: 17.34,
+                                fontWeight: FontWeight.w600),
+
                       child: Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 20),
                         child: Container(
@@ -86,6 +103,7 @@ class _WelcomePageState extends State<WelcomePage> {
                                   fontSize: 17.34,
                                   fontWeight: FontWeight.w600),
                             ),
+
                           ),
                         ),
                       ),
@@ -101,6 +119,19 @@ class _WelcomePageState extends State<WelcomePage> {
                             MaterialPageRoute(
                               builder: (context) => LoginScreen(),
                             )),
+                       child: Container(
+                          width: 366,
+                          height: 52.97,
+                          decoration: BoxDecoration(
+                              border: Border.all(
+                                color: mainPurple,
+                              ),
+                              borderRadius: BorderRadius.circular(30.82)),
+                          child: Center(
+                            child: Text(
+                              'Sign In',
+                              style: GoogleFonts.raleway(
+
                         child: Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 20),
                           child: Container(
@@ -109,7 +140,7 @@ class _WelcomePageState extends State<WelcomePage> {
                             height: 52.97,
 
                             decoration: BoxDecoration(
-                                border: Border.all(
+                               border: Border.all(
                                   color: mainPurple,
                                 ),
                                 borderRadius: BorderRadius.circular(30.82)),

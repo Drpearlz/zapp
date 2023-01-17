@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+
 //import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:zapp/constant.dart';
 import 'package:zapp/screens/intro/welcome_screen.dart';
 
 class OnboardingScreenUtil extends StatefulWidget {
-
   final String backgroundImg;
   final String onBoardMsgHeading;
   final String onBoardMsgBody;
@@ -13,7 +16,7 @@ class OnboardingScreenUtil extends StatefulWidget {
   final String nextMsg;
   final String buttonText;
   final String logoType;
-  final bool imgStretch;  //changed here
+  final bool imgStretch; //changed here
 
   const OnboardingScreenUtil(
       {super.key,
@@ -24,7 +27,7 @@ class OnboardingScreenUtil extends StatefulWidget {
       this.nextMsg = 'Skip',
       this.buttonText = 'Next',
       this.logoType = 'assets/images/logo_transparent.png',
-      this.imgStretch = true});  //changed here
+      this.imgStretch = true}); //changed here
 
   @override
   State<OnboardingScreenUtil> createState() => _OnboardingScreenUtilState();
@@ -41,7 +44,9 @@ class _OnboardingScreenUtilState extends State<OnboardingScreenUtil> {
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: AssetImage(widget.backgroundImg),
-                fit: widget.imgStretch ? BoxFit.fill : BoxFit.cover,  //changed here
+                fit: widget.imgStretch
+                    ? BoxFit.fill
+                    : BoxFit.cover, //changed here
               ),
             ),
           ),
@@ -77,7 +82,7 @@ class _OnboardingScreenUtilState extends State<OnboardingScreenUtil> {
               const Spacer(),
               Text(
                 widget.onBoardMsgHeading,
-                style: const TextStyle(
+                style: GoogleFonts.righteous(
                   color: Colors.white,
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
@@ -89,7 +94,7 @@ class _OnboardingScreenUtilState extends State<OnboardingScreenUtil> {
               ),
               Text(
                 widget.onBoardMsgBody,
-                style: const TextStyle(
+                style: GoogleFonts.raleway(
                   color: Colors.white,
                   fontSize: 14,
                 ),
@@ -107,7 +112,7 @@ class _OnboardingScreenUtilState extends State<OnboardingScreenUtil> {
                 },
                 child: Text(
                   widget.nextMsg,
-                  style: const TextStyle(
+                  style: GoogleFonts.righteous(
                     color: Colors.white,
                     fontSize: 14,
                     fontWeight: FontWeight.bold,
@@ -214,7 +219,7 @@ class _OnboardingScreenUtilState extends State<OnboardingScreenUtil> {
                           children: [
                             Text(
                               widget.buttonText,
-                              style: const TextStyle(
+                              style: GoogleFonts.righteous(
                                 color: kPrimaryColor, //Color(0xFF635BEB),
                                 fontWeight: FontWeight.w700,
                                 fontSize: 18,

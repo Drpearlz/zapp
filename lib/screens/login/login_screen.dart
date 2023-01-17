@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:zapp/constant.dart';
 import 'package:zapp/utils/bottom_bar.dart';
 import 'package:zapp/utils/custom_field.dart';
@@ -17,32 +18,31 @@ class LoginScreen extends StatelessWidget {
               const SizedBox(
                 height: 30.88,
               ),
-              const Text(
+              Text(
                 'Welcome Back',
-                style: TextStyle(
-                    fontWeight: FontWeight.w700,
-                    fontSize: 20,
-                    color: deepPurple,
-                    fontFamily: 'Raleway'),
+                style: GoogleFonts.raleway(
+                  fontWeight: FontWeight.w700,
+                  fontSize: 20,
+                  color: deepPurple,
+                ),
               ),
               const SizedBox(
                 height: 4.41,
               ),
-              const Text(
+              Text(
                 'Login',
-                style: TextStyle(
-                    fontWeight: FontWeight.w700,
-                    fontSize: 32,
-                    color: deepPurple,
-                    fontFamily: 'Raleway'),
+                style: GoogleFonts.raleway(
+                  fontWeight: FontWeight.w700,
+                  fontSize: 32,
+                  color: deepPurple,
+                ),
               ),
               const SizedBox(
                 height: 29.87,
               ),
               SizedBox(
                 child: Image.asset('assets/images/Lifesavers Bust 2.png',
-                  height: 309,
-                    width: 361),
+                    height: 200, width: MediaQuery.of(context).size.width * 95),
               ),
               const SizedBox(
                 height: 23.47,
@@ -59,22 +59,21 @@ class LoginScreen extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 25, right: 25),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.end,
-                  children: const [
-                    CustomField(
+                  children: [
+                    const CustomField(
                       hintText: 'Password',
                       suffixIcon: Icon(
                         Icons.remove_red_eye,
                         color: Color(0xFFA095C1),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 8.82,
                     ),
                     Text(
                       'Forgot Password?',
-                      style: TextStyle(
+                      style: GoogleFonts.raleway(
                         fontSize: 16,
-                        fontFamily: 'Raleway',
                         fontWeight: FontWeight.w500,
                         color: deepPurple,
                       ),
@@ -103,14 +102,14 @@ class LoginScreen extends StatelessWidget {
                     decoration: BoxDecoration(
                         color: deepPurple,
                         borderRadius: BorderRadius.circular(8.8224)),
-                    child: const Center(
+                    child: Center(
                       child: Text(
                         'Login',
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.w600,
-                            fontSize: 16,
-                            fontFamily: 'Raleway'),
+                        style: GoogleFonts.raleway(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w600,
+                          fontSize: 16,
+                        ),
                       ),
                     ),
                   ),
@@ -122,13 +121,13 @@ class LoginScreen extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Text(
+                  Text(
                     "Don't have an account?",
-                    style: TextStyle(
-                        fontSize: 14,
-                        color: Color(0xFF82799D),
-                        fontWeight: FontWeight.w500,
-                        fontFamily: 'Raleway'),
+                    style: GoogleFonts.raleway(
+                      fontSize: 14,
+                      color: const Color(0xFF82799D),
+                      fontWeight: FontWeight.w500,
+                    ),
                   ),
                   const SizedBox(
                     width: 8.82,
@@ -137,10 +136,9 @@ class LoginScreen extends StatelessWidget {
                     onTap: () {
                       Navigator.of(context).pushNamed('/sign_up');
                     },
-                    child: const Text(
+                    child: Text(
                       'Sign Up',
-                      style: TextStyle(
-                        fontFamily: 'Raleway',
+                      style: GoogleFonts.raleway(
                         fontSize: 14,
                         color: deepPurple,
                         fontWeight: FontWeight.w500,

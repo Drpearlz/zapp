@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zapp/constant.dart';
 import 'package:zapp/screens/intro/onboarding_screen.dart';
-import 'package:zapp/screens/intro/welcome_screen.dart';
 import 'package:zapp/utils/health_logo.dart';
 
 //Splash screen - Displays logo for 4 seconds and moves to next screen

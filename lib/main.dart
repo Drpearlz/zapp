@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
 
       // for those that want to check each screens separately,
       // just edit the '/' in the initial route to any of the routes e.g '/login'
-      // initialRoute: '/',
+      initialRoute: '/',
       // This is the routes for the different screens so far
 
       //home: BottomBar(),
@@ -64,6 +64,21 @@ class MyApp extends StatelessWidget {
         '/login': (context) => const LoginScreen(),
         '/booking': (context) => const BookingScreen(),
         '/client': (context) => const ClientScreen(),
+      },
+
+      // home: ChatScreen(),
+
+      // routes: {
+      //   '/': (context) => const SplashScreen(),
+      //   '/sign_up': (context) => const SignUpScreen1(),
+      //   '/welcome': (context) => const WelcomePage(),
+      //   '/onboarding': (context) => const OnboardingScreen(),
+      //   '/bottombar': (context) => const BottomBar(),
+      //   '/login': (context) => const LoginScreen(),
+      //   '/booking': (context) => const BookingScreen(),
+      //   '/client': (context) => const ClientScreen(),
+      // },
+      // home: MyHomePage(),
     },
     );
   }

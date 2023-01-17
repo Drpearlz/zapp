@@ -40,6 +40,7 @@ dependencies:
   intl: ^0.17.0
   flutter:
       sdk: flutter
+  table_calendar: ^3.0.8
 
 
 dev_dependencies:
@@ -75,22 +76,22 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  fonts:
-    - family: Righteous
-      fonts:
-        - asset: assets/fonts/Righteous/Righteous-Regular.ttf
-        # - asset: assets/fonts/Raleway-Regular.ttf
-    - family: Raleway
-      fonts:
-        - asset: assets/fonts/Raleway-Regular.ttf
-        - asset: assets/fonts/Raleway-Bold.ttf
-    - family: SourceSansPro
-      fonts:
-        - asset: assets/fonts/SourceSansPro-Bold.ttf
-        - asset: assets/fonts/SourceSansPro-Regular.ttf
-    - family: NotoSansJP
-      fonts:
-        - asset: assets/fonts/NotoSansJP-Medium.otf
+  # fonts:
+  #   - family: Righteous
+  #     fonts:
+  #       - asset: assets/fonts/Righteous/Righteous-Regular.ttf
+  #       # - asset: assets/fonts/Raleway-Regular.ttf
+  #   - family: Raleway
+  #     fonts:
+  #       - asset: assets/fonts/Raleway-Regular.ttf
+  #       - asset: assets/fonts/Raleway-Bold.ttf
+  #   - family: SourceSansPro
+  #     fonts:
+  #       - asset: assets/fonts/SourceSansPro-Bold.ttf
+  #       - asset: assets/fonts/SourceSansPro-Regular.ttf
+  #   - family: NotoSansJP
+  #     fonts:
+  #       - asset: assets/fonts/NotoSansJP-Medium.otf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

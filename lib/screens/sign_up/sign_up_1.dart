@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:zapp/utils/logo_text.dart';
 import 'package:zapp/widgets/no_account_text.dart';
 import 'package:zapp/widgets/social_cards.dart';
@@ -35,11 +36,10 @@ class SignUpScreen1 extends StatelessWidget {
                     padding: const EdgeInsets.only(top: 20),
                     child: Column(
                       children: [
-                        const Text(
+                        Text(
                           'Sign Up',
-                          style: TextStyle(
+                          style: GoogleFonts.raleway(
                             color: black,
-                            //fontFamily: 'Righteous',
                             fontSize: 24.0,
                             letterSpacing: 1.5,
                             fontWeight: FontWeight.bold,
@@ -49,8 +49,9 @@ class SignUpScreen1 extends StatelessWidget {
                         Padding(
                           padding: const EdgeInsets.only(left: 25, right: 25),
                           child: TextFormField(
-                            decoration: const InputDecoration(
-                              labelStyle: TextStyle(color: kPrimaryColor),
+                            decoration: InputDecoration(
+                              labelStyle:
+                                  GoogleFonts.raleway(color: kPrimaryColor),
                               hintText: "Enter Email Address",
                               floatingLabelBehavior:
                                   FloatingLabelBehavior.always,
@@ -63,8 +64,9 @@ class SignUpScreen1 extends StatelessWidget {
                           padding: const EdgeInsets.only(left: 25, right: 25),
                           child: TextFormField(
                             obscureText: true,
-                            decoration: const InputDecoration(
-                              labelStyle: TextStyle(color: kPrimaryColor),
+                            decoration: InputDecoration(
+                              labelStyle:
+                                  GoogleFonts.raleway(color: kPrimaryColor),
                               hintText: "Enter your password",
                               floatingLabelBehavior:
                                   FloatingLabelBehavior.always,
@@ -77,8 +79,9 @@ class SignUpScreen1 extends StatelessWidget {
                           padding: const EdgeInsets.only(left: 25, right: 25),
                           child: TextFormField(
                             obscureText: true,
-                            decoration: const InputDecoration(
-                              labelStyle: TextStyle(color: kPrimaryColor),
+                            decoration: InputDecoration(
+                              labelStyle:
+                                  GoogleFonts.raleway(color: kPrimaryColor),
                               hintText: "Confirm password",
                               floatingLabelBehavior:
                                   FloatingLabelBehavior.always,
@@ -97,12 +100,12 @@ class SignUpScreen1 extends StatelessWidget {
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(50),
                                 ),
-                                primary: kPrimaryColor,
+                                backgroundColor: kPrimaryColor,
                               ),
                               onPressed: () {},
-                              child: const Text(
+                              child: Text(
                                 "Continue",
-                                style: TextStyle(
+                                style: GoogleFonts.raleway(
                                   //  color: Colors.black,
                                   fontSize: 14,
                                 ),
@@ -111,13 +114,12 @@ class SignUpScreen1 extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(height: 20),
-                        const Text(
+                        Text(
                           "Continue with social media",
                           textAlign: TextAlign.center,
-                          style: TextStyle(
+                          style: GoogleFonts.raleway(
                             color: Colors.black,
                             fontSize: 20,
-                            fontFamily: 'SourceSansPro',
                           ),
                         ),
                         const SizedBox(height: 20),
@@ -146,18 +148,18 @@ class SignUpScreen1 extends StatelessWidget {
                           color: Colors.green,
                           height: 25,
                           width: double.infinity,
-                          child: const Center(
+                          child: Center(
                             child: Text.rich(
                               TextSpan(
                                 text: "Are you a health worker ? ",
-                                style: TextStyle(
+                                style: GoogleFonts.raleway(
                                   color: white,
                                   fontSize: 20,
                                 ),
                                 children: [
                                   TextSpan(
                                     text: "Click here",
-                                    style: TextStyle(
+                                    style: GoogleFonts.raleway(
                                       color: kPrimaryColor,
                                       fontSize: 20,
                                     ),

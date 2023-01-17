@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:zapp/constant.dart';
 
 //widgets that shoes Dont have an account on Auth Screens
@@ -12,11 +13,10 @@ class NoAccountText extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        const Text(
+        Text(
           "Already have an account ? ",
-          style: TextStyle(
+          style: GoogleFonts.raleway(
             fontSize: 18,
-            fontFamily: 'SourceSansPro',
           ),
         ),
         GestureDetector(
