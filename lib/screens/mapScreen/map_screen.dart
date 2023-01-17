@@ -176,6 +176,18 @@ class _Map_ScreenState extends State<Map_Screen> {
                                 child: Text(
                                   "5 available spots",
                                   style: GoogleFonts.raleway(
+                              Container(
+                                  height: 26.28,
+                                  width: 124.87,
+                                decoration: BoxDecoration(
+                                 borderRadius: BorderRadius.circular(4.38),
+                                  color: lightGrayishCyan
+                                ),
+                                child: const Center(
+                                  child: Text(
+                                    "5 available spots",
+                                    style: TextStyle(
+
                                       color: Colors.blueAccent,
                                       fontSize: 13.95,
                                       fontStyle: FontStyle.normal,
@@ -279,6 +291,24 @@ class _Map_ScreenState extends State<Map_Screen> {
                                       fontSize: 13.95,
                                       fontStyle: FontStyle.normal,
                                       fontWeight: FontWeight.w700),
+                              Container(
+                                height: 26.28,
+                                width: 124.87,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(4.38),
+                                    color: lightGrayishCyan
+                                ),
+                                child: const Center(
+                                  child: Text(
+                                    "3 available spots",
+                                    style: TextStyle(
+                                        color: Colors.blueAccent,
+                                        fontSize: 13.95,
+                                        fontFamily: "NotoSansJP",
+                                        fontStyle: FontStyle.normal,
+                                        fontWeight: FontWeight.w700
+                                    ),
+                                  ),
                                 ),
                               ),
                             )
