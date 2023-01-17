@@ -37,5 +37,3 @@ samples, guidance on mobile development, and a full API reference.
 [Toheeb Akintayo - Flutter Developer](https://github.com/akintayo-t2002)
 
 [Rapp Jeremiah - Flutter Developer](https://github.com/mrrapp)
-
-[Yusuf Ahmad - Flutter Developer](https://github.com/CreativeToby02)

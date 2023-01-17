@@ -6,7 +6,10 @@ class MenuCard extends StatelessWidget {
 
   final String menuCardText;
   final AssetImage menuCardImage;
-  final Future menuCardNavigation;
+
+  final Function menuCardNavigation;
+
+  final Future menuCardNavigation;>>>>>>> dev
 
   @override
   Widget build(BuildContext context) {
