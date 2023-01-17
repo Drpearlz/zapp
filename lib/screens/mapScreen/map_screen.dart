@@ -166,6 +166,7 @@ class _Map_ScreenState extends State<Map_Screen> {
                                   ),
                                 ),
                               ),
+
                               const Text("Paediatrician",
                               style: TextStyle(
                                 color: Colors.grey,
@@ -178,18 +179,45 @@ class _Map_ScreenState extends State<Map_Screen> {
                               const SizedBox(
                                 height: 4,
                               ),
+                            ),
+                            Text(
+                              "Paediatrician",
+                              style: GoogleFonts.raleway(
+                                  color: Colors.grey,
+                                  fontSize: 15.70,
+                                  fontStyle: FontStyle.normal,
+                                  fontWeight: FontWeight.w400),
+                            ),
+                            const SizedBox(
+                              height: 4,
+                            ),
+                            Container(
+                              height: 26.28,
+                              width: 124.87,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(4.38),
+                                  color: LightGrayishCyan),
+                              child: Center(
+                                child: Text(
+                                  "5 available spots",
+                                  style: GoogleFonts.raleway(
                               Container(
                                   height: 26.28,
                                   width: 124.87,
                                 decoration: BoxDecoration(
                                  borderRadius: BorderRadius.circular(4.38),
+                                  color: LightGrayishCyan
+
                                   color: lightGrayishCyan
+
                                 ),
                                 child: const Center(
                                   child: Text(
                                     "5 available spots",
                                     style: TextStyle(
-                                      color: Colors.blueAccent,
+
+
+                                     color: Colors.blueAccent,
                                       fontSize: 13.95,
                                       fontFamily: "NotoSansJP",
                                       fontStyle: FontStyle.normal,
@@ -274,6 +302,25 @@ class _Map_ScreenState extends State<Map_Screen> {
                                       fontStyle: FontStyle.normal,
                                       fontFamily: "NotoSansJP",
                                       fontWeight: FontWeight.w500
+                                      fontWeight: FontWeight.w700),
+                              Container(
+                                height: 26.28,
+                                width: 124.87,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(4.38),
+                                    color: lightGrayishCyan
+                                ),
+                                child: const Center(
+                                  child: Text(
+                                    "3 available spots",
+                                    style: TextStyle(
+                                        color: Colors.blueAccent,
+                                        fontSize: 13.95,
+                                        fontFamily: "NotoSansJP",
+                                        fontStyle: FontStyle.normal,
+                                        fontWeight: FontWeight.w700
+                                    ),
+
                                   ),
                                 ),
                               ),
@@ -294,7 +341,7 @@ class _Map_ScreenState extends State<Map_Screen> {
                                 width: 124.87,
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(4.38),
-                                    color: lightGrayishCyan
+                                    color: LightGrayishCyan
                                 ),
                                 child: const Center(
                                   child: Text(

@@ -26,7 +26,9 @@ samples, guidance on mobile development, and a full API reference.
 
 [Collins Oden - Software Engineer](https://github.com/Collinsoden22) 
 
-[Ayodele Daniel [BLAQSHYD] - Flutter Developer](https://github.com/blaqshyd) 
+[Ayodele Daniel [BLAQSHYD] - Flutter Developer](https://github.com/blaqshyd)
+
+[Samuel Ademujimi [Sam.dEv] - Flutter Developer](https://github.com/sam-shot) 
 
 [Moses Mwila  - Software Developer](https://github.com/mosesmwila)
 
@@ -35,5 +37,3 @@ samples, guidance on mobile development, and a full API reference.
 [Toheeb Akintayo - Flutter Developer](https://github.com/akintayo-t2002)
 
 [Rapp Jeremiah - Flutter Developer](https://github.com/mrrapp)
-
-[Yusuf Ahmad - Flutter Developer](https://github.com/CreativeToby02)
