@@ -93,7 +93,7 @@ class GridDashBoard extends StatelessWidget {
           children: myList.map((data) {
             return Container(
               decoration: BoxDecoration(
-                  color: const Color(0xFFD9D9D9),
+                  color: const Color(0xFFF1F1F1),
                   borderRadius: BorderRadius.circular(20)),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -103,10 +103,12 @@ class GridDashBoard extends StatelessWidget {
                     width: 55,
                   ),
                   const Gap(14),
-                  Text(
-                    data.title,
-                    style: const TextStyle(
-                        fontSize: 20, fontWeight: FontWeight.bold),
+                  Center(
+                    child: Text(
+                      data.title,
+                      style: const TextStyle(
+                          fontSize: 20, fontWeight: FontWeight.bold),
+                    ),
                   ),
                   const Gap(8),
                   Text(

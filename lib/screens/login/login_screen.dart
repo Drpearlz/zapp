@@ -41,7 +41,8 @@ class LoginScreen extends StatelessWidget {
               ),
               SizedBox(
                 child: Image.asset('assets/images/Lifesavers Bust 2.png',
-                    width: 65),
+                  height: 309,
+                    width: 361),
               ),
               const SizedBox(
                 height: 23.47,
@@ -90,7 +91,7 @@ class LoginScreen extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => BottomBar(),
+                      builder: (context) => const BottomBar(),
                     ),
                   );
                 },

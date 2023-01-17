@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class ClientScreenWidget extends StatelessWidget {
   final IconData icon;
   final String text;
-  final Function()? onpressed;
+  final void Function()? onpressed;
   const ClientScreenWidget(
       {Key? key, required this.icon, required this.text, this.onpressed})
       : super(key: key);
@@ -28,7 +28,7 @@ class ClientScreenWidget extends StatelessWidget {
                   color: Color(0xFF7B6CA8)),
             ),
           ),
-          Spacer(),
+          const Spacer(),
           const Icon(
             Icons.arrow_forward_ios,
             size: 25,

@@ -37,6 +37,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         onBoardMsgBody:
             'Skip long wait times, by booking ahead\nto see a health professional in Nigeria.',
         controller: pageController,
+        imgStretch: false,
       ),
       OnboardingScreenUtil(
         backgroundImg: 'assets/images/onboarding_2.png',
@@ -51,6 +52,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         onBoardMsgBody:
             'Connect with the best doctors and\nhealth care workers in the country',
         controller: pageController,
+        imgStretch: false,
       ),
       OnboardingScreenUtil(
         backgroundImg: 'assets/images/onboarding_4.png',
@@ -59,6 +61,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             'Connect easily with thousands of licensed\n\t\t\t\thealth professionals in your areas',
         controller: pageController,
         logoType: 'assets/images/logo_non_trans.png',
+        imgStretch: false,
       ),
       OnboardingScreenUtil(
         backgroundImg: 'assets/images/onboarding_5.png',
