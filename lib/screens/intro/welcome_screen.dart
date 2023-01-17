@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:zapp/constant.dart';
+
 import '../login/login_screen.dart';
 import '../sign_up/sign_up_1.dart';
 
@@ -45,6 +46,9 @@ class _WelcomePageState extends State<WelcomePage> {
                   ],
                 ),
 
+                SizedBox(height: 155),
+
+
                 SizedBox(height: 100),
 
                 SizedBox(height: MediaQuery.of(context).size.height * 0.05),
@@ -58,6 +62,8 @@ class _WelcomePageState extends State<WelcomePage> {
                       fontSize: 24,
                       color: mainPurple),
                 ),
+                SizedBox(height: 105.1),
+
                 SizedBox(height: 70),
                SizedBox(
                   height: 100,
@@ -81,7 +87,8 @@ class _WelcomePageState extends State<WelcomePage> {
                         child: Center(
                           child: Text(
                             'Create Account',
-                            style: GoogleFonts.raleway(
+                            style: TextStyle(
+                                fontFamily: 'Source Sans Pro',
                                 color: white,
                                 fontSize: 17.34,
                                 fontWeight: FontWeight.w600),
@@ -130,6 +137,8 @@ class _WelcomePageState extends State<WelcomePage> {
                           child: Center(
                             child: Text(
                               'Sign In',
+                              style: TextStyle(
+                                  fontFamily: 'Source Sans Pro',
                               style: GoogleFonts.raleway(
 
                         child: Padding(

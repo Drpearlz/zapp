@@ -29,9 +29,9 @@ class _BookingScreenOneState extends State<BookingScreenOne> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Text('Todays date: ${today.toString().split(" ")[0]}'),
             Container(
                 width: MediaQuery.of(context).size.width * .9,
-                margin: const EdgeInsets.only(top: 20),
                 padding: const EdgeInsets.all(8),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
@@ -53,7 +53,8 @@ class _BookingScreenOneState extends State<BookingScreenOne> {
                 style: GoogleFonts.raleway(
                     fontSize: 15, fontWeight: FontWeight.bold)),
             const Gap(20),
-            Expanded(
+            SizedBox(
+              height: 100,
               child: GridView.builder(
                 scrollDirection: Axis.vertical,
                 shrinkWrap: true,
@@ -87,7 +88,7 @@ class _BookingScreenOneState extends State<BookingScreenOne> {
                 },
               ),
             ),
-            const Gap(20),
+            Gap(20),
             SizedBox(
               width: double.maxFinite,
               height: 50,
@@ -96,7 +97,7 @@ class _BookingScreenOneState extends State<BookingScreenOne> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20),
                   ),
-                  backgroundColor: kPrimaryColor,
+                  primary: kPrimaryColor,
                 ),
                 onPressed: () {
                   // Navigator.of(context).push(
@@ -105,7 +106,8 @@ class _BookingScreenOneState extends State<BookingScreenOne> {
                   //   ),
                   // );
                 },
-                child: Text("Next", style: GoogleFonts.raleway(fontSize: 18)),
+                child: Text("Next",
+                    style: GoogleFonts.sourceSansPro(fontSize: 18)),
               ),
             ),
           ],

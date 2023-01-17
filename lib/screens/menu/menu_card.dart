@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:zapp/constant.dart';
 
 class MenuCard extends StatelessWidget {
@@ -24,12 +23,12 @@ class MenuCard extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            Text(
+            const Text(
               'Your Diet Chart',
-              style: GoogleFonts.raleway(
+              style: TextStyle(
                   color: deepPurple,
                   fontSize: 20.0,
-              
+                  fontFamily: 'Raleway',
                   fontWeight: FontWeight.w700),
             ),
             Container(

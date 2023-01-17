@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class ClientScreenWidget extends StatelessWidget {
   final IconData icon;
@@ -23,9 +22,9 @@ class ClientScreenWidget extends StatelessWidget {
             padding: const EdgeInsets.all(8.0),
             child: Text(
               text,
-              style: GoogleFonts.raleway(
+              style: const TextStyle(
                   fontSize: 18,
-                 
+                  fontFamily: 'Raleway',
                   color: Color(0xFF7B6CA8)),
             ),
           ),

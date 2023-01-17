@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:zapp/screens/booking/booking_screens/booking_screen1.dart';
+import 'package:zapp/screens/booking/booking_screens/booking_screen3.dart';
+
 import 'booking_screens/booking_screen2.dart';
 import 'booking_screens/booking-confirmed_screen.dart';
 
@@ -32,10 +33,12 @@ class BookingScreen extends StatelessWidget {
                         size: 24,
                       ),
                     ),
-                    Text(
+                    const Text(
                       'Booking',
-                      style: GoogleFonts.raleway(
-                          fontSize: 24, fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'SourceSansPro'),
                     ),
                     const Gap(140),
                     IconButton(
@@ -77,12 +80,12 @@ class BookingScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              const Expanded(
+              Expanded(
                 child: TabBarView(
                   children: [
                     BookingScreenOne(),
                     BookingScreenTwo(),
-                    BookingConfirmedScreen(),
+                    BookingScreenThree(),
                   ],
                 ),
               ),

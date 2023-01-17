@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:zapp/screens/chat/chat_widget.dart';
+import 'package:intl/intl.dart';
 
 class ChatScreen extends StatelessWidget {
   const ChatScreen({Key? key}) : super(key: key);
@@ -20,7 +20,7 @@ class ChatScreen extends StatelessWidget {
           backgroundColor: Colors.white,
           title: const Text(
             'Messaging',
-            style: GoogleFonts.raleway(
+            style: TextStyle(
                 fontSize: 20, fontWeight: FontWeight.w500, color: Colors.black),
           ),
           leading: Builder(
@@ -50,14 +50,14 @@ class ChatScreen extends StatelessWidget {
                   color: Color(0xFF432C81),
                 ),
                 const Gap(15),
-                Text(
+                const Text(
                   'Messaging',
-                  style: GoogleFonts.raleway(
+                  style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.w500,
                       color: Colors.black),
                 ),
-                const Spacer(),
+                Spacer(),
                 const Icon(
                   Icons.menu,
                   size: 25,
@@ -85,19 +85,19 @@ class ChatScreen extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  padding: const EdgeInsets.all(20),
+                  padding: EdgeInsets.all(20),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
+                    children: const [
                       Text(
                         'Dr. Chidindu Green',
-                        style: GoogleFonts.raleway(
+                        style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.w500,
                         ),
                       ),
-                      const Gap(10),
-                      const Text('10:00-10:30AM')
+                      Gap(10),
+                      Text('10:00-10:30AM')
                     ],
                   ),
                 )
@@ -168,7 +168,7 @@ Padding(
 padding: EdgeInsets.all(8.0),
 child: Text(
 'Messaging',
-style: GoogleFonts.raleway(
+style: TextStyle(
 fontSize: 22,
 ),
 ),
