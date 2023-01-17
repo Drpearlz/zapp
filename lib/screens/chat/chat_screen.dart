@@ -128,39 +128,33 @@ class ChatScreen extends StatelessWidget {
                   isMe: true,
                   messageText: messages[4],
                 ),
-                Container(
-                  child: Container(
-                    decoration: const BoxDecoration(
-                      border: Border(
-                        top: BorderSide(color: Color(0xff12173A), width: 2.0),
-                      ),
-                    ),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: <Widget>[
-                        const Expanded(
-                          child: TextField(
-                            decoration: InputDecoration(
-                              contentPadding: EdgeInsets.symmetric(
-                                  vertical: 10.0, horizontal: 20.0),
-                              hintText: 'Type your message here...',
-                              border: InputBorder.none,
-                            ),
-                          ),
-                        ),
-                        ElevatedButton(
-                          onPressed: () {},
-                          child: const Text(
-                            'Send',
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                )
+                Spacer(),
               ],
             ),
           ),
+          Container(
+            decoration: const BoxDecoration(
+              border: Border(
+                top: BorderSide(color: Color(0xff12173A), width: 2.0),
+              ),
+            ),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                const Expanded(
+                  child: TextField(
+                    decoration: InputDecoration(
+                      contentPadding: EdgeInsets.symmetric(
+                          vertical: 10.0, horizontal: 20.0),
+                      hintText: 'Type your message here...',
+                      border: InputBorder.none,
+                    ),
+                  ),
+                ),
+                IconButton(onPressed: () {}, icon: Icon(Icons.send))
+              ],
+            ),
+          )
         ],
       ),
     ));

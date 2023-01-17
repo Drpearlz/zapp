@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 //import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:zapp/constant.dart';
 import 'package:zapp/screens/intro/welcome_screen.dart';
@@ -12,6 +13,7 @@ class OnboardingScreenUtil extends StatefulWidget {
   final String nextMsg;
   final String buttonText;
   final String logoType;
+  final bool imgStretch;  //changed here
 
   const OnboardingScreenUtil(
       {super.key,
@@ -21,7 +23,8 @@ class OnboardingScreenUtil extends StatefulWidget {
       required this.controller, //changed here
       this.nextMsg = 'Skip',
       this.buttonText = 'Next',
-      this.logoType = 'assets/images/logo_transparent.png'});
+      this.logoType = 'assets/images/logo_transparent.png',
+      this.imgStretch = true});  //changed here
 
   @override
   State<OnboardingScreenUtil> createState() => _OnboardingScreenUtilState();
@@ -38,7 +41,7 @@ class _OnboardingScreenUtilState extends State<OnboardingScreenUtil> {
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: AssetImage(widget.backgroundImg),
-                fit: BoxFit.fill,
+                fit: widget.imgStretch ? BoxFit.fill : BoxFit.cover,  //changed here
               ),
             ),
           ),
